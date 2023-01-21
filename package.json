@@ -1,0 +1,49 @@
+{
+  "name": "@uniformdev/nextjs-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "run-s download:manifest next:dev",
+    "next:dev": "next dev",
+    "build": "run-s download:manifest next:build",
+    "next:build": "next build",
+    "download:manifest": "uniform context manifest download --output ./lib/uniform/contextManifest.json",
+    "uniform:pull:signals": "uniform context signal pull ./content/signals",
+    "uniform:pull:components": "uniform canvas component pull ./content/components",
+    "uniform:pull:compositions": "uniform canvas composition pull ./content/compositions",
+    "uniform:pull": "run-s uniform:pull:signals uniform:pull:components uniform:pull:compositions",
+    "uniform:push:signals": "uniform context signal push ./content/signals",
+    "uniform:push:components": "uniform canvas component push ./content/components",
+    "uniform:push:compositions": "uniform canvas composition push ./content/compositions",
+    "uniform:publish": "uniform canvas composition push ./content/compositions --state published",
+    "uniform:push": "run-s uniform:push:signals uniform:push:components uniform:push:compositions",
+    "start": "next start",
+    "start:stackblitz": "npm install && next dev"
+  },
+  "dependencies": {
+    "@next/font": "^13.1.2",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@uniformdev/canvas": "^18.0.0",
+    "@uniformdev/canvas-cloudinary": "^17.1.0",
+    "@uniformdev/canvas-next": "^18.0.0",
+    "@uniformdev/canvas-react": "^18.0.0",
+    "@uniformdev/cli": "^18.0.0",
+    "@uniformdev/context": "^18.0.0",
+    "@uniformdev/context-devtools": "^18.0.0",
+    "@uniformdev/context-next": "^18.0.0",
+    "@uniformdev/context-react": "^18.0.0",
+    "autoprefixer": "^10.4.13",
+    "contentful": "^9.2.17",
+    "next": "^13.1.4",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.9.4"
+  }
+}

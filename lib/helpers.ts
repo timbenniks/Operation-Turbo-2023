@@ -15,3 +15,30 @@ export function asYear(date: string) {
 export function isDateBeforeToday(date: Date) {
   return new Date(date.toDateString()) < new Date(new Date().toDateString());
 }
+
+export function toVideo(video) {
+  return {
+    date: video.snippet.publishedAt,
+    title: video.snippet.title,
+    description: video.snippet.description,
+    image: video.snippet.thumbnails.high.url.replace("hqdefault", "maxresdefault"),
+    videoId: video.id.videoId ? video.id.videoId : video.id
+  }
+}
+
+export function toTalk(fields) {
+  return {
+    id: fields.slug,
+    conference: fields.conference,
+    talk: fields.talk,
+    location: fields.location,
+    date: {
+      raw: fields.date,
+      day: asDay(fields.date),
+      month: asMonth(fields.date),
+      year: asYear(fields.date),
+      upcoming: !isDateBeforeToday(new Date(fields.date)),
+    },
+    link: fields.link,
+  }
+}

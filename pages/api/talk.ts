@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { createClient } from "contentful";
-import { isDateBeforeToday, asDay, asMonth, asYear } from "../../lib/helpers";
 import type { Talk } from "../../lib/types"
+import { toTalk } from "../../lib/helpers"
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { id } = req.query
@@ -17,22 +17,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   });
 
   const { fields } = entry.items[0]
-
-  const result = {
-    id: fields.slug,
-    conference: fields.conference,
-    talk: fields.talk,
-    location: fields.location,
-    date: {
-      raw: fields.date,
-      day: asDay(fields.date),
-      month: asMonth(fields.date),
-      year: asYear(fields.date),
-      upcoming: !isDateBeforeToday(new Date(fields.date)),
-    },
-    link: fields.link,
-  }
-
+  const result = toTalk(fields)
 
   res.status(200).json({ meta: { amount: 0 }, result })
 }

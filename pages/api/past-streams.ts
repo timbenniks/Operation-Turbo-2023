@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { toVideo } from "../../lib/helpers"
 
 async function fetchAllStreams(id, count, order) {
   let allData = [];
@@ -39,21 +40,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const data: any = await fetchAllStreams(id, count, order)
 
   let response;
-
   if (data.error) {
     response = data.error
   }
   else {
-    const videos = data?.map(video => {
-      return {
-        date: video.snippet.publishedAt,
-        title: video.snippet.title,
-        description: video.snippet.description,
-        image: video.snippet.thumbnails.high.url.replace("hqdefault", "maxresdefault"),
-        videoId: video.id.videoId
-      }
-    }).filter(video => video.videoId)
-
+    const videos = data.map(video => (toVideo(video)))
     response = { meta: { amount: videos.length, order }, result: videos }
   }
 

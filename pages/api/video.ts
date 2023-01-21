@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { toVideo } from "../../lib/helpers"
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { id } = req.query
@@ -10,15 +11,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     response = result.error
   }
   else {
-    response = result.items.map(video => {
-      return {
-        date: video.snippet.publishedAt,
-        title: video.snippet.title,
-        description: video.snippet.description,
-        image: video.snippet.thumbnails.maxres.url,
-        videoId: video.id
-      }
-    })
+    response = result.items.map(video => (toVideo(video)))
   }
 
   res.status(response.code || 200).json({ result: response })

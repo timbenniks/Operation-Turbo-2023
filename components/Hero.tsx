@@ -5,7 +5,9 @@ import {
 
 type HeroProps = ComponentProps<{
   title: string;
-  description?: string;
+  description?: {
+    rteValue: string;
+  };
 }>;
 
 const Hero: React.FC<HeroProps> = ({ title, description }: HeroProps) => (

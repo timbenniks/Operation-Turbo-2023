@@ -1,5 +1,5 @@
 {
-  "name": "@uniformdev/nextjs-starter",
+  "name": "operation-turbo-2023",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,8 +17,7 @@
     "uniform:push:compositions": "uniform canvas composition push ./content/compositions",
     "uniform:publish": "uniform canvas composition push ./content/compositions --state published",
     "uniform:push": "run-s uniform:push:signals uniform:push:components uniform:push:compositions",
-    "start": "next start",
-    "start:stackblitz": "npm install && next dev"
+    "start": "next start"
   },
   "dependencies": {
     "@next/font": "^13.1.2",
@@ -29,7 +28,6 @@
     "@uniformdev/canvas-react": "^18.0.0",
     "@uniformdev/cli": "^18.0.0",
     "@uniformdev/context": "^18.0.0",
-    "@uniformdev/context-devtools": "^18.0.0",
     "@uniformdev/context-next": "^18.0.0",
     "@uniformdev/context-react": "^18.0.0",
     "autoprefixer": "^10.4.13",

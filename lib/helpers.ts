@@ -15,18 +15,3 @@ export function asYear(date: string) {
 export function isDateBeforeToday(date: Date) {
   return new Date(date.toDateString()) < new Date(new Date().toDateString());
 }
-
-export type Talk = {
-  id: string;
-  conference: string;
-  talk: string;
-  location: string;
-  date: {
-    raw: string;
-    day: string;
-    month: string;
-    year: string;
-    upcoming: boolean;
-  },
-  link: string;
-}

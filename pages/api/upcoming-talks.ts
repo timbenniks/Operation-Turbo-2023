@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { createClient } from "contentful";
 import { isDateBeforeToday, asDay, asMonth, asYear } from "../../lib/helpers";
+import type { Talk } from "../../lib/types"
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { count } = req.query
@@ -12,7 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   var gt = new Date().toISOString();
 
-  const entries = await client.getEntries({
+  const entries = await client.getEntries<Talk>({
     content_type: "talk",
     order: "-fields.date",
     'fields.date[gte]': gt,

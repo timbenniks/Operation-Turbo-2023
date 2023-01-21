@@ -1,10 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-async function fetchAllStreams(id, count, order: "date" | "rating" | "relevance" | "title" | "videoCount" | "viewCount" = "date") {
+async function fetchAllStreams(id, count, order) {
   let allData = [];
   let morePagesAvailable = true;
   let pageToken = false;
-  let url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${id}&key=${process.env.YOUTUBE_KEY}&eventType=completed&type=video&maxResults=${count || 3}&order=${order}`
+  let url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${id}&key=${process.env.YOUTUBE_KEY}&eventType=completed&type=video&maxResults=${count || 3}&order=${order || "date"}`
 
   while (morePagesAvailable) {
     if (pageToken) {

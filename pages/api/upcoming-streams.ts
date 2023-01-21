@@ -11,7 +11,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     response = result.error
   }
   else {
-    const videos = data.items.map(video => {
+    const videos = result.items.map(video => {
       return {
         date: video.snippet.publishedAt,
         title: video.snippet.title,

@@ -12,7 +12,12 @@ async function fetchAllVideos(id, count, order) {
     }
 
     const response = await fetch(url)
-    let { items, nextPageToken } = await response.json();
+    let { items, nextPageToken, error } = await response.json();
+
+    if (error) {
+      return { error }
+    }
+
     items.forEach(item => allData.push(item));
 
     morePagesAvailable = nextPageToken ? true : false;
@@ -30,17 +35,26 @@ async function fetchAllVideos(id, count, order) {
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { id, count, order } = req.query
 
-  const data = await fetchAllVideos(id, count, order)
+  const data: any = await fetchAllVideos(id, count, order)
 
-  const videos = data.map(video => {
-    return {
-      date: video.snippet.publishedAt,
-      title: video.snippet.title,
-      description: video.snippet.description,
-      image: video.snippet.thumbnails.high.url.replace("hqdefault", "maxresdefault"),
-      videoId: video.id.videoId
-    }
-  }).filter(video => video.videoId)
+  let response;
 
-  res.status(200).json({ meta: { amount: videos.length, order }, result: videos })
+  if (data.error) {
+    response = data.error
+  }
+  else {
+    const videos = data?.map(video => {
+      return {
+        date: video.snippet.publishedAt,
+        title: video.snippet.title,
+        description: video.snippet.description,
+        image: video.snippet.thumbnails.high.url.replace("hqdefault", "maxresdefault"),
+        videoId: video.id.videoId
+      }
+    }).filter(video => video.videoId)
+
+    response = { meta: { amount: videos.length, order }, result: videos }
+  }
+
+  res.status(response.code || 200).json(response)
 }

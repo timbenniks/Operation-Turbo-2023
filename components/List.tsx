@@ -7,7 +7,7 @@ type ListProps = ComponentProps<{
 }>;
 
 const List: React.FC<ListProps> = ({ component: { variant } }: ListProps) => (
-  <div className="component-list">
+  <div className={`${variant !== "list" || !variant ? "row-component" : ""}`}>
     <div className="mb-4">
       <UniformSlot name="title" />
     </div>

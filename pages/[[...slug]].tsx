@@ -1,27 +1,28 @@
-import { GetServerSidePropsContext } from "next";
+import { getNavigationItems } from "lib/uniform/canvasClient";
+import { withUniformGetServerSideProps } from "@uniformdev/canvas-next/slug";
 import PageComposition from "@/components/PageComposition";
-import { getCompositionBySlug } from "lib/uniform/canvasClient";
+import runEnhancers from "lib/uniform/enhancers";
 
-const CanvasPage = (props) => PageComposition(props);
+export const getServerSideProps = withUniformGetServerSideProps({
+  param: "slug",
+  preview: process.env.NODE_ENV === "development",
+  requestOptions: {
+    unstable_resolveData: true,
+  },
+  callback: async (context, composition) => {
+    if (composition) {
+      await runEnhancers(composition);
+    } else {
+      return {
+        notFound: true,
+      };
+    }
+    const { preview = false } = context || {};
+    const nodes = await getNavigationItems();
+    return {
+      props: { nodes, preview },
+    };
+  },
+});
 
-export default CanvasPage;
-
-export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const { slug } = context?.params || {};
-  const slugString = Array.isArray(slug) ? slug.join("/") : slug;
-  const { preview } = context;
-  const slashedSlug = !slugString
-    ? "/"
-    : slugString.startsWith("/")
-    ? slugString
-    : `/${slugString}`;
-
-  const composition = await getCompositionBySlug(slashedSlug, preview);
-
-  return {
-    props: {
-      composition,
-      preview: preview ?? false,
-    },
-  };
-}
+export default PageComposition;

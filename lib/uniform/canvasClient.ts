@@ -5,15 +5,11 @@ import {
 } from "@uniformdev/canvas";
 import runEnhancers from "./enhancers";
 import getConfig from "next/config";
+import { ProjectMapClient } from '@uniformdev/project-map';
 
 const {
   serverRuntimeConfig: { apiKey, apiHost, projectId },
 } = getConfig();
-
-export const getState = (preview: boolean | undefined) =>
-  process.env.NODE_ENV === "development" || preview
-    ? CANVAS_DRAFT_STATE
-    : CANVAS_PUBLISHED_STATE;
 
 export const canvasClient = new CanvasClient({
   apiKey,
@@ -21,26 +17,42 @@ export const canvasClient = new CanvasClient({
   projectId,
 });
 
-export async function getCompositionBySlug(slug: string, preview: boolean) {
-  const { composition } = await canvasClient.getCompositionBySlug({
-    slug,
-    state: getState(preview),
+export const projectMapClient = new ProjectMapClient({
+  apiKey,
+  apiHost,
+  projectId,
+});
+
+export async function getNavigationItems() {
+  const { serverRuntimeConfig } = getConfig();
+  const { projectMapId } = serverRuntimeConfig
+
+  const { nodes } = await projectMapClient.getNodes({
+    projectMapId
   });
+
+  return nodes.map(node => {
+    return {
+      name: node.name,
+      path: node.path
+    }
+  })
+}
+
+export async function getCompositionBySlug(slug: string, preview: boolean) {
+  const { serverRuntimeConfig } = getConfig();
+  const { projectMapId } = serverRuntimeConfig
+
+  const { composition } = await canvasClient
+    .getCompositionByNodePath({
+      projectMapId,
+      projectMapNodePath: slug,
+      state:
+        process.env.NODE_ENV === 'development' || preview
+          ? CANVAS_DRAFT_STATE
+          : CANVAS_PUBLISHED_STATE
+    })
+
   await runEnhancers(composition);
   return composition;
 }
-
-export const getCompositionPaths = async () => {
-  const pages = await canvasClient.getCompositionList({
-    skipEnhance: true,
-    state: getState(undefined),
-  });
-
-  return pages.compositions
-    .filter((c) => c.composition._slug)
-    .map((c) =>
-      c.composition._slug?.startsWith("/")
-        ? `${c.composition._slug}`
-        : `/${c.composition._slug}`
-    );
-};

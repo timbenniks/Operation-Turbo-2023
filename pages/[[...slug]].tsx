@@ -7,6 +7,7 @@ export const getServerSideProps = withUniformGetServerSideProps({
   param: "slug",
   preview: process.env.NODE_ENV === "development",
   requestOptions: {
+    // @ts-ignore
     unstable_resolveData: true,
   },
   callback: async (context, composition) => {

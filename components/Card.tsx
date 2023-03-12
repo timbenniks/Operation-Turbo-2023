@@ -56,11 +56,10 @@ const Card: React.FC<CardProps> = ({
 
   const dateTag = (
     <div className="date-field fancy-image bg-black">
-      <div className="mr-4 item-date">
+      <div className="item-date">
         <div
           className="
         date-wrap
-        bg-blue-dark
         py-2
         px-4
         text-white
@@ -123,7 +122,25 @@ const Card: React.FC<CardProps> = ({
   }
 
   if (type === "talk") {
-    return dateTag;
+    return (
+      <div className="flex flex-row">
+        <div className="w-20 mr-4">{dateTag}</div>
+        <div
+          className={`w-full ${variant ? "md:w-[calc(100%-5rem)]" : "w-full"}`}
+        >
+          {upcoming ? <p className="fancy-title">upcoming</p> : null}
+          <Link
+            target="_blank"
+            title={title}
+            rel="noopener noreferrer"
+            href={identifier}
+          >
+            {title ? titleTag : null}
+          </Link>
+          {description ? descriptionTag : null}
+        </div>
+      </div>
+    );
   }
 };
 

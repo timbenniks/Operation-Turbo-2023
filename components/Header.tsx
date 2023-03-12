@@ -15,7 +15,7 @@ const Header: React.FC<Props> = ({ nodes }: Props) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed w-full top-0 bg-[#091A32] bg-opacity-70 z-10">
+    <header className="fixed w-full top-0 bg-[#091A32] bg-opacity-70 z-20">
       <div className="m-auto flex h-20 max-w-7xl items-center justify-end md:justify-center px-8 xl:px-0">
         <button
           className="relative h-12 w-12 bg-white md:hidden"

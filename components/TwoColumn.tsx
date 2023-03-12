@@ -1,23 +1,23 @@
 import { ComponentProps, UniformSlot } from "@uniformdev/canvas-react";
 
 type TwoColumnProps = ComponentProps<{
-  layout: "fifty-fifty" | "third-twothirds" | "twothirds-third";
+  layout: "1-1" | "1-2" | "2-1";
 }>;
 
 const TwoColumn: React.FC<TwoColumnProps> = ({ layout }: TwoColumnProps) => {
-  let sideA = "md:w-2/4";
-  let sideB = "md:w-2/4";
+  let sideA = "";
+  let sideB = "";
 
   switch (layout) {
-    case "fifty-fifty":
+    case "1-1":
       sideA = "md:w-2/4";
       sideB = "md:w-2/4";
       break;
-    case "third-twothirds":
+    case "1-2":
       sideA = "md:w-2/5";
       sideB = "md:w-3/5";
       break;
-    case "twothirds-third":
+    case "2-1":
       sideA = "md:w-3/5";
       sideB = "md:w-2/5";
       break;

@@ -1,8 +1,10 @@
 import { ComponentProps } from "@uniformdev/canvas-react";
+import Link from "next/link";
 
 type CtaProps = ComponentProps<{
   text: string;
   link: any;
+  externalLink: string;
   component: {
     variant?: string;
   };
@@ -11,12 +13,14 @@ type CtaProps = ComponentProps<{
 const Cta: React.FC<CtaProps> = ({
   text,
   link,
+  externalLink,
   component: { variant },
 }: CtaProps) => (
-  <a
+  <Link
     title={text}
     className={`cta cta-${variant ? variant : "default"}`}
-    href={link}
+    href={link ? link : externalLink}
+    target={externalLink ? "_blank" : "_self"}
   >
     {variant ? (
       <>
@@ -39,7 +43,7 @@ const Cta: React.FC<CtaProps> = ({
     ) : (
       <>{text}</>
     )}
-  </a>
+  </Link>
 );
 
 export default Cta;

@@ -21,7 +21,7 @@ export function toVideo(video) {
     date: video.snippet.publishedAt,
     title: video.snippet.title,
     description: video.snippet.description,
-    image: video.snippet.thumbnails.high.url.replace("hqdefault", "maxresdefault"),
+    image: video.snippet.thumbnails?.high?.url.replace("hqdefault", "maxresdefault"),
     videoId: video.id.videoId ? video.id.videoId : video.id
   }
 }

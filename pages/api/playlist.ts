@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     response = result.error
   }
   else {
-    response = result.items.map(video => (toVideo(video)))
+    response = result.items.map(video => (toVideo(video))).filter((video) => video.title !== 'Deleted video')
   }
 
   res.status(response.code || 200).json({ result: response })

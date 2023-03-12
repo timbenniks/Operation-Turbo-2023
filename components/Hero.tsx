@@ -15,7 +15,7 @@ const Hero: React.FC<HeroProps> = ({
   verticalAlignment,
   textAlignment,
 }: HeroProps) => (
-  <div className="relative md:aspect-[1255/537] overflow-hidden mt-20 md:mt-auto">
+  <div className="hero relative md:aspect-[1255/537] overflow-hidden mt-20 md:mt-auto">
     {image && image[0]?.publicId ? (
       <CldImage
         width={image[0]?.width}

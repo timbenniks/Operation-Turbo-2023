@@ -7,11 +7,13 @@ import RichText from "./RichText";
 import TwoColumn from "./TwoColumn";
 import List from "./List"
 import Card from "./Card"
+import Container from "./Container"
 
 registerUniformComponent({ type: "hero", component: Hero });
 registerUniformComponent({ type: "twoColumn", component: TwoColumn });
 registerUniformComponent({ type: "cta", component: Cta });
-
+registerUniformComponent({ type: "container", component: Container })
+registerUniformComponent({ type: "container", variantId: "fullWidth", component: Container })
 
 registerUniformComponent({ type: "list", component: List });
 registerUniformComponent({ type: "list", variantId: "grid", component: List });

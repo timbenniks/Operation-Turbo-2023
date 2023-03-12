@@ -45,7 +45,7 @@ export default function PageComposition({
       </Head>
 
       <Header nodes={nodes} />
-      <main className="max-w-[1400px] mx-auto">
+      <main>
         <UniformComposition
           data={composition}
           contextualEditingEnhancer={contextualEditingEnhancer}

@@ -16,7 +16,7 @@ const RichText: React.FC<RichTextProps> = ({
   <>
     {content && (
       <article
-        className={`rich-text text-xl ${variant ? "p-8" : "p-0"}`}
+        className={`rich-text text-xl mb-4 ${variant ? "p-8" : "p-0"}`}
         dangerouslySetInnerHTML={{ __html: content?.rteValue }}
       />
     )}

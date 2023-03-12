@@ -50,7 +50,9 @@ const Card: React.FC<CardProps> = ({
   );
 
   const titleTag = (
-    <h3 className="text-2xl mb-4 line-clamp-1 font-black underline">{title}</h3>
+    <h3 className="text-xl mb-2 line-clamp-1 font-black uppercase underline">
+      {title}
+    </h3>
   );
   const descriptionTag = <p className="line-clamp-2">{description}</p>;
 
@@ -126,9 +128,13 @@ const Card: React.FC<CardProps> = ({
       <div className="flex flex-row">
         <div className="w-20 mr-4">{dateTag}</div>
         <div
-          className={`w-full ${variant ? "md:w-[calc(100%-5rem)]" : "w-full"}`}
+          className={`${variant ? "w-full md:w-[calc(100%-5rem)]" : "w-full"}`}
         >
-          {upcoming ? <p className="fancy-title">upcoming</p> : null}
+          {upcoming ? (
+            <p className="inline-block font-bold text-lg uppercase fancy-title">
+              upcoming
+            </p>
+          ) : null}
           <Link
             target="_blank"
             title={title}

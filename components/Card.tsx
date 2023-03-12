@@ -1,5 +1,6 @@
 import { ComponentProps } from "@uniformdev/canvas-react";
 import { CldImage } from "next-cloudinary";
+import Link from "next/link";
 import theme from "tailwindcss/defaultTheme";
 
 type CardProps = ComponentProps<{
@@ -9,6 +10,10 @@ type CardProps = ComponentProps<{
   description: string;
   date: string;
   media: string;
+  day: string;
+  month: string;
+  year: string;
+  upcoming: boolean;
   component: {
     variant?: string;
   };
@@ -21,6 +26,10 @@ const Card: React.FC<CardProps> = ({
   description,
   date,
   media,
+  day,
+  month,
+  year,
+  upcoming,
   component: { variant },
 }: CardProps) => {
   const img = (
@@ -30,7 +39,7 @@ const Card: React.FC<CardProps> = ({
       alt={title}
       loading="lazy"
       src={media}
-      className="block"
+      className="fancy-image"
       deliveryType="fetch"
       sizes={`${
         variant
@@ -41,29 +50,69 @@ const Card: React.FC<CardProps> = ({
   );
 
   const titleTag = (
-    <h3 className="text-xl font-bold uppercase flowing-title block line-clamp-1">
-      {title}
-    </h3>
+    <h3 className="text-2xl mb-4 line-clamp-1 font-black underline">{title}</h3>
   );
-  const descriptionTag = <p className="line-clamp-4">{description}</p>;
+  const descriptionTag = <p className="line-clamp-2">{description}</p>;
+
+  const dateTag = (
+    <div className="date-field fancy-image bg-black">
+      <div className="mr-4 item-date">
+        <div
+          className="
+        date-wrap
+        bg-blue-dark
+        py-2
+        px-4
+        text-white
+        uppercase
+        text-center
+        font-black
+      "
+        >
+          <span className="block leading-none text-4xl pb-1">{day}</span>
+          <span className="block leading-none text-lg pb-1 uppercase">
+            {month}
+          </span>
+          <span className="block leading-none text-lg pb-1">{year}</span>
+        </div>
+      </div>
+    </div>
+  );
 
   if (type === "video") {
     return (
       <div
-        className={`flex flex-col mb-8 ${variant ? "md:flex-row" : "flex-col"}`}
+        className={` flex flex-col mb-4 ${
+          variant ? "md:flex-row" : "flex-col"
+        }`}
       >
         <div
-          className={`mb-4 w-full ${
+          className={`relative mb-4 w-full ${
             variant ? "md:mr-4 md:w-60" : "mb-4 w-full"
           }`}
         >
-          {img ? img : null}
+          <Link
+            target="_blank"
+            title={title}
+            rel="noopener noreferrer"
+            href={`https://youtube.com/watch?v=${identifier}`}
+          >
+            {img ? img : null}
+            <span className="play"></span>
+          </Link>
         </div>
         <div
           className={`w-full ${variant ? "md:w-[calc(100%-15rem)]" : "w-full"}`}
         >
-          {title ? titleTag : null}
-          {description ? descriptionTag : null}
+          <Link
+            target="_blank"
+            title={title}
+            rel="noopener noreferrer"
+            href={`https://youtube.com/watch?v=${identifier}`}
+          >
+            {title ? titleTag : null}
+            {description && variant ? descriptionTag : null}
+          </Link>
         </div>
       </div>
     );
@@ -74,7 +123,7 @@ const Card: React.FC<CardProps> = ({
   }
 
   if (type === "talk") {
-    return <h1>talk-{identifier}</h1>;
+    return dateTag;
   }
 };
 

@@ -37,16 +37,16 @@ const Title: React.FC<TitleProps> = ({
   }
 
   return (
-    <TitleTag
-      tagName={type || "h1"}
-      className={bottomMargin ? "mb-4" : "mb-auto"}
-    >
-      <span className={`${size} bg-black`}>
-        <span className="p-2 flowing-title inline-block font-bold uppercase -my-2">
-          {text}
-        </span>
-      </span>
-    </TitleTag>
+    <div>
+      <TitleTag
+        tagName={type || "h1"}
+        className={`${
+          bottomMargin ? "mb-6" : "mb-auto"
+        } ${size} title flowing-title`}
+      >
+        {text}
+      </TitleTag>
+    </div>
   );
 };
 

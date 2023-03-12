@@ -8,7 +8,7 @@ type ListProps = ComponentProps<{
 
 const List: React.FC<ListProps> = ({ component: { variant } }: ListProps) => (
   <div className={`${variant !== "list" || !variant ? "row-component" : ""}`}>
-    <div className="mb-4">
+    <div className="mb-8">
       <UniformSlot name="title" />
     </div>
 
@@ -16,7 +16,7 @@ const List: React.FC<ListProps> = ({ component: { variant } }: ListProps) => (
 
     <div
       className={`mt-4 grid gap-4 ${
-        variant === "grid" ? "grid-cols-3" : "grid-cols-1"
+        variant === "grid" ? "grid-cols-1 md:grid-cols-3" : "grid-cols-1"
       }`}
     >
       <UniformSlot name="list" />

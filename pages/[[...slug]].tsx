@@ -1,9 +1,12 @@
 import { getNavigationItems } from "lib/uniform/canvasClient";
-import { withUniformGetServerSideProps } from "@uniformdev/canvas-next/slug";
+import {
+  withUniformGetStaticProps,
+  withUniformGetStaticPaths,
+} from "@uniformdev/canvas-next/project-map";
 import PageComposition from "@/components/PageComposition";
 import runEnhancers from "lib/uniform/enhancers";
 
-export const getServerSideProps = withUniformGetServerSideProps({
+export const getStaticProps = withUniformGetStaticProps({
   param: "slug",
   preview: process.env.NODE_ENV === "development",
   requestOptions: {
@@ -23,6 +26,13 @@ export const getServerSideProps = withUniformGetServerSideProps({
     return {
       props: { nodes, preview },
     };
+  },
+});
+
+export const getStaticPaths = withUniformGetStaticPaths({
+  requestOptions: {
+    depth: 5,
+    withCompositionData: true,
   },
 });
 

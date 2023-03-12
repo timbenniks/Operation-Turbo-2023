@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 type NavLink = {
@@ -14,7 +15,7 @@ const Header: React.FC<Props> = ({ nodes }: Props) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed w-full top-0 bg-[#091A32] bg-opacity-80 z-10">
+    <header className="fixed w-full top-0 bg-[#091A32] bg-opacity-70 z-10">
       <div className="m-auto flex h-20 max-w-7xl items-center justify-end md:justify-center px-8 xl:px-0">
         <button
           className="relative h-12 w-12 bg-white md:hidden"
@@ -47,6 +48,15 @@ const Header: React.FC<Props> = ({ nodes }: Props) => {
               : "hidden"
           }`}
         >
+          <li key="home" className={open ? "py-4 text-xl" : "p-auto text-sm"}>
+            <Link
+              title="home"
+              href="/"
+              className="uppercase font-black text-lg no-underline"
+            >
+              HOME
+            </Link>
+          </li>
           {navItems &&
             navItems.map((node) => {
               return (
@@ -54,13 +64,13 @@ const Header: React.FC<Props> = ({ nodes }: Props) => {
                   key={node.name}
                   className={open ? "py-4 text-xl" : "p-auto text-sm"}
                 >
-                  <a
+                  <Link
                     title={node.name}
                     href={node.path}
                     className="uppercase font-black text-lg no-underline"
                   >
                     {node.name}
-                  </a>
+                  </Link>
                 </li>
               );
             })}

@@ -15,7 +15,7 @@ const Hero: React.FC<HeroProps> = ({
   verticalAlignment,
   textAlignment,
 }: HeroProps) => (
-  <div className="relative aspect-[1255/537] overflow-hidden">
+  <div className="relative md:aspect-[1255/537] overflow-hidden mt-20 md:mt-auto">
     {image && image[0]?.publicId ? (
       <CldImage
         width={image[0]?.width}
@@ -25,7 +25,7 @@ const Hero: React.FC<HeroProps> = ({
         rawTransformations={[image[0]?.transformation]}
         loading="eager"
         sizes="100vw"
-        className="absolute left-0 top-0 object-cover"
+        className="static md:absolute left-0 top-0 object-cover"
       />
     ) : (
       <img
@@ -38,14 +38,14 @@ const Hero: React.FC<HeroProps> = ({
       />
     )}
     <article
-      className={`absolute ${textAlignment === "right" && "text-right"} ${
-        textAlignment === "left" && "text-left"
-      } ${textAlignment === "center" && "text-center"} ${
-        copyLocation === "right" ? "right-12" : "left-12"
-      } 
-      ${verticalAlignment === "top" && "top-12"} ${
-        verticalAlignment === "bottom" && "bottom-12"
-      } ${verticalAlignment === "middle" && "top-2/4 -translate-y-2/4"}`}
+      className={`static m-4 md:m-0 md:absolute ${
+        textAlignment === "right" ? "md:text-right" : ""
+      } ${textAlignment === "left" ? "md:text-left" : ""} ${
+        textAlignment === "center" ? "md:text-center" : ""
+      } ${copyLocation === "right" ? "right-12" : "left-12"} 
+      ${verticalAlignment === "top" ? "top-12" : ""} ${
+        verticalAlignment === "bottom" ? "bottom-12" : ""
+      } ${verticalAlignment === "middle" ? "top-2/4 md:-translate-y-2/4" : ""}`}
     >
       <UniformSlot
         name="title"

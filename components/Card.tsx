@@ -42,9 +42,7 @@ const Card: React.FC<CardProps> = ({
       className="fancy-image"
       deliveryType="fetch"
       sizes={`${
-        variant
-          ? "240px"
-          : `(min-width: ${theme.screens.md}) 50vw, (min-width: ${theme.screens.lg}) 25vw, 100vw`
+        variant ? "400px" : `(min-width: ${theme.screens.md}) 33vw, 100vw`
       }`}
     />
   );

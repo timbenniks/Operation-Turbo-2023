@@ -43,7 +43,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     response = data.error
   }
   else {
-    const videos = data.map(video => (toVideo(video))).filter(video => video.videoId).filter(video => !video.title.includes('#shorts'))
+    const videos = data.map(video => (toVideo(video, false))).filter(video => video.videoId).filter(video => !video.title.includes('#shorts'))
     response = { meta: { amount: videos.length, order }, result: videos }
   }
 

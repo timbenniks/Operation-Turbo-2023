@@ -8,6 +8,7 @@ import {
 
 import "./canvasComponents";
 import Header from "./Header";
+import Footer from "./Footer";
 
 type NavLink = {
   name: string;
@@ -54,6 +55,7 @@ export default function PageComposition({
           <UniformSlot name="components" />
         </UniformComposition>
       </main>
+      <Footer nodes={nodes} />
     </>
   );
 }

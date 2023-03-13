@@ -44,7 +44,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     response = data.error
   }
   else {
-    const videos = data.map(video => (toVideo(video)))
+    const videos = data.map(video => (toVideo(video, false)))
     response = { meta: { amount: videos.length, order }, result: videos }
   }
 

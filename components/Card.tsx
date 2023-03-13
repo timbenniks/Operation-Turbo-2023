@@ -110,15 +110,49 @@ const Card: React.FC<CardProps> = ({
             href={`https://youtube.com/watch?v=${identifier}`}
           >
             {title ? titleTag : null}
-            {description && variant ? descriptionTag : null}
           </Link>
+          {description && variant ? descriptionTag : null}
         </div>
       </div>
     );
   }
 
   if (type === "blog") {
-    return <h1>blog-{identifier}</h1>;
+    return (
+      <div
+        className={` flex flex-col mb-4 ${
+          variant ? "md:flex-row" : "flex-col"
+        }`}
+      >
+        <div
+          className={`relative mb-4 w-full ${
+            variant ? "md:mr-4 md:w-60" : "mb-4 w-full"
+          }`}
+        >
+          <Link
+            target="_blank"
+            title={title}
+            rel="noopener noreferrer"
+            href={identifier}
+          >
+            {img ? img : null}
+          </Link>
+        </div>
+        <div
+          className={`w-full ${variant ? "md:w-[calc(100%-15rem)]" : "w-full"}`}
+        >
+          <Link
+            target="_blank"
+            title={title}
+            rel="noopener noreferrer"
+            href={identifier}
+          >
+            {title ? titleTag : null}
+          </Link>
+          {description && variant ? descriptionTag : null}
+        </div>
+      </div>
+    );
   }
 
   if (type === "talk") {

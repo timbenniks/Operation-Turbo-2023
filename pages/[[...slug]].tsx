@@ -10,7 +10,6 @@ export const getStaticProps = withUniformGetStaticProps({
   param: "slug",
   preview: process.env.NODE_ENV === "development",
   requestOptions: {
-    // @ts-ignore
     unstable_resolveData: true,
   },
   callback: async (context, composition) => {

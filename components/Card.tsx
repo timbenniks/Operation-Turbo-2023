@@ -39,7 +39,7 @@ const Card: React.FC<CardProps> = ({
       alt={title}
       loading="lazy"
       src={media}
-      className="fancy-image object-cover"
+      className="fancy-image"
       deliveryType="fetch"
       sizes={`${
         variant ? "400px" : `(min-width: ${theme.screens.md}) 33vw, 100vw`
@@ -90,9 +90,9 @@ const Card: React.FC<CardProps> = ({
         }`}
       >
         <div
-          className={`relative mb-4 w-full aspect-[480/320] ${
-            variant ? "md:mr-4 md:w-60" : "mb-4 w-full"
-          }`}
+          className={`relative w-full ${
+            variant ? "md:mr-4 md:w-60" : "w-full"
+          } ${!media ? "aspect-[16/9] mb-0" : "mb-4"}`}
         >
           <Link
             target="_blank"
@@ -120,7 +120,7 @@ const Card: React.FC<CardProps> = ({
             {title ? (
               titleTag
             ) : (
-              <div className="w-full rounded-lg bg-white bg-opacity-10 py-3"></div>
+              <div className="w-full rounded-lg bg-white bg-opacity-10 mt-4 py-3"></div>
             )}
           </Link>
           {description && variant ? descriptionTag : null}

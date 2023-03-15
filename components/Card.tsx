@@ -39,7 +39,7 @@ const Card: React.FC<CardProps> = ({
       alt={title}
       loading="lazy"
       src={media}
-      className="fancy-image"
+      className="fancy-image object-cover"
       deliveryType="fetch"
       sizes={`${
         variant ? "400px" : `(min-width: ${theme.screens.md}) 33vw, 100vw`
@@ -68,17 +68,21 @@ const Card: React.FC<CardProps> = ({
         font-black
       "
         >
-          <span className="block leading-none text-4xl pb-1">{day}</span>
-          <span className="block leading-none text-lg pb-1 uppercase">
-            {month}
+          <span className="block leading-none text-4xl pb-1">
+            {day ? day : "01"}
           </span>
-          <span className="block leading-none text-lg pb-1">{year}</span>
+          <span className="block leading-none text-lg pb-1 uppercase">
+            {month ? month : "JAN"}
+          </span>
+          <span className="block leading-none text-lg pb-1">
+            {year ? year : "2023"}
+          </span>
         </div>
       </div>
     </div>
   );
 
-  if (type === "video") {
+  if (!type || type === "video") {
     return (
       <div
         className={` flex flex-col mb-4 ${
@@ -86,7 +90,7 @@ const Card: React.FC<CardProps> = ({
         }`}
       >
         <div
-          className={`relative mb-4 w-full ${
+          className={`relative mb-4 w-full aspect-[480/320] ${
             variant ? "md:mr-4 md:w-60" : "mb-4 w-full"
           }`}
         >
@@ -96,7 +100,11 @@ const Card: React.FC<CardProps> = ({
             rel="noopener noreferrer"
             href={`https://youtube.com/watch?v=${identifier}`}
           >
-            {img ? img : null}
+            {media ? (
+              img
+            ) : (
+              <div className="w-full h-full rounded-lg bg-white bg-opacity-10" />
+            )}
             <span className="play"></span>
           </Link>
         </div>
@@ -109,9 +117,16 @@ const Card: React.FC<CardProps> = ({
             rel="noopener noreferrer"
             href={`https://youtube.com/watch?v=${identifier}`}
           >
-            {title ? titleTag : null}
+            {title ? (
+              titleTag
+            ) : (
+              <div className="w-full rounded-lg bg-white bg-opacity-10 py-3"></div>
+            )}
           </Link>
           {description && variant ? descriptionTag : null}
+          {!description && variant ? (
+            <div className="w-3/4 rounded-lg bg-white bg-opacity-10 py-3 mt-4"></div>
+          ) : null}
         </div>
       </div>
     );
@@ -125,7 +140,7 @@ const Card: React.FC<CardProps> = ({
         }`}
       >
         <div
-          className={`relative mb-4 w-full ${
+          className={`relative mb-4 w-full aspect-[480/320] ${
             variant ? "md:mr-4 md:w-60" : "mb-4 w-full"
           }`}
         >
@@ -133,9 +148,13 @@ const Card: React.FC<CardProps> = ({
             target="_blank"
             title={title}
             rel="noopener noreferrer"
-            href={identifier}
+            href={identifier ? identifier : ""}
           >
-            {img ? img : null}
+            {media ? (
+              img
+            ) : (
+              <div className="w-full h-full rounded-lg bg-white bg-opacity-10" />
+            )}
           </Link>
         </div>
         <div
@@ -145,11 +164,18 @@ const Card: React.FC<CardProps> = ({
             target="_blank"
             title={title}
             rel="noopener noreferrer"
-            href={identifier}
+            href={identifier ? identifier : ""}
           >
-            {title ? titleTag : null}
+            {title ? (
+              titleTag
+            ) : (
+              <div className="w-full rounded-lg bg-white bg-opacity-10 p-3"></div>
+            )}
           </Link>
           {description && variant ? descriptionTag : null}
+          {!description && variant ? (
+            <div className="w-3/4 rounded-lg bg-white bg-opacity-10 mt-4 p-3"></div>
+          ) : null}
         </div>
       </div>
     );
@@ -171,11 +197,19 @@ const Card: React.FC<CardProps> = ({
             target="_blank"
             title={title}
             rel="noopener noreferrer"
-            href={identifier}
+            href={identifier ? identifier : ""}
           >
-            {title ? titleTag : null}
+            {title ? (
+              titleTag
+            ) : (
+              <div className="w-full rounded-lg bg-white bg-opacity-10 p-3"></div>
+            )}
           </Link>
-          {description ? descriptionTag : null}
+          {description ? (
+            descriptionTag
+          ) : (
+            <div className="w-3/4 rounded-lg bg-white bg-opacity-10 mt-4 p-3"></div>
+          )}
         </div>
       </div>
     );

@@ -28,14 +28,9 @@ const Hero: React.FC<HeroProps> = ({
         className="static md:absolute left-0 top-0 object-cover"
       />
     ) : (
-      <img
-        srcSet="https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto,f_auto,ar_640:573,c_fill/w_700/Screenshot_2023-01-25_at_14.19.56_zhe8a9.png"
-        alt="No image added"
-        width="640"
-        height="573"
-        className="block"
-        loading="eager"
-      />
+      <div className="w-full h-full absolute top-0 left-0">
+        <div className="w-full h-full rounded-lg bg-white bg-opacity-10" />
+      </div>
     )}
     <article
       className={`static m-4 md:m-0 md:absolute ${

@@ -7,23 +7,23 @@ type ListProps = ComponentProps<{
 }>;
 
 const List: React.FC<ListProps> = ({ component: { variant } }: ListProps) => (
-  <div className={`${variant !== "list" || !variant ? "row-component" : ""}`}>
-    <div className="mb-8">
-      <UniformSlot name="title" emptyPlaceholder={<div className="h-24" />} />
-    </div>
+  <div
+    className={`${variant !== "list" || !variant ? "row-component" : "list"}`}
+  >
+    <UniformSlot name="title" emptyPlaceholder={<div className="h-12" />} />
 
-    <div className="mb-8">
-      <UniformSlot
-        name="description"
-        emptyPlaceholder={<div className="h-24" />}
-      />
-    </div>
+    <UniformSlot
+      name="description"
+      emptyPlaceholder={<div className="h-12" />}
+    />
     <div
       className={`mt-4 grid gap-4 ${
-        variant === "grid" ? "grid-cols-1 md:grid-cols-3" : "grid-cols-1"
+        !variant || variant === "grid"
+          ? "grid-cols-1 md:grid-cols-3"
+          : "grid-cols-1"
       }`}
     >
-      <UniformSlot name="list" emptyPlaceholder={<div className="h-24" />} />
+      <UniformSlot name="list" emptyPlaceholder={<div className="h-12" />} />
     </div>
   </div>
 );

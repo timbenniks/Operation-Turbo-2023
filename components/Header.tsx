@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import Image from "next/image";
 
 type NavLink = {
   name: string;
@@ -16,7 +17,7 @@ const Header: React.FC<Props> = ({ nodes }: Props) => {
 
   return (
     <header className="fixed w-full top-0 bg-[#091A32] bg-opacity-70 z-20">
-      <div className="m-auto flex h-20 max-w-7xl items-center justify-end md:justify-center px-8 xl:px-0">
+      <div className="mx-auto relative flex h-20 max-w-7xl items-center justify-start px-8 xl:px-0">
         <button
           className="relative h-12 w-12 bg-white md:hidden"
           onClick={() => setOpen((prev) => !prev)}
@@ -75,6 +76,13 @@ const Header: React.FC<Props> = ({ nodes }: Props) => {
               );
             })}
         </ul>
+        <Image
+          src="/logo.png"
+          alt="Tim Benniks"
+          className="absolute right-8 top-2"
+          width={100}
+          height={100}
+        />
       </div>
     </header>
   );

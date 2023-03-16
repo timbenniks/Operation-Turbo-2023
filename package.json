@@ -17,7 +17,8 @@
     "uniform:push:compositions": "uniform canvas composition push ./content/compositions",
     "uniform:publish": "uniform canvas composition push ./content/compositions --state published",
     "uniform:push": "run-s uniform:push:signals uniform:push:components uniform:push:compositions",
-    "start": "next start"
+    "start": "next start",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@cloudinary-util/url-loader": "^3.0.0",
@@ -37,6 +38,7 @@
     "contentful": "^9.3.3",
     "next": "^13.2.4",
     "next-cloudinary": "^4.0.0",
+    "next-sitemap": "^4.0.5",
     "postcss": "^8.4.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

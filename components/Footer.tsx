@@ -14,8 +14,8 @@ const Footer: React.FC<Props> = ({ nodes }: Props) => {
 
   return (
     <footer className="w-full bg-[#091A32]">
-      <div className="m-auto flex h-20 max-w-7xl items-center justify-end md:justify-center px-8 xl:px-0">
-        <ul className={`items-center md:space-x-6 text-sm md:flex`}>
+      <div className="m-auto flex h-20 max-w-7xl items-center justify-center px-8 xl:px-0">
+        <ul className={`items-center text-center md:space-x-6 text-sm md:flex`}>
           <li key="home" className="p-auto text-sm">
             <Link
               title="home"

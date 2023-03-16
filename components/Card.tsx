@@ -35,10 +35,11 @@ const Card: React.FC<CardProps> = ({
   const img = (
     <CldImage
       width={480}
-      height={320}
+      height={270}
       alt={title}
       loading="lazy"
       src={media}
+      crop="fill"
       className="fancy-image"
       deliveryType="fetch"
       sizes={`${
@@ -140,7 +141,7 @@ const Card: React.FC<CardProps> = ({
         }`}
       >
         <div
-          className={`relative mb-4 w-full aspect-[480/320] ${
+          className={`relative w-full ${
             variant ? "md:mr-4 md:w-60" : "mb-4 w-full"
           }`}
         >

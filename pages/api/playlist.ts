@@ -12,7 +12,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     response = result.error
   }
   else {
-    console.log(result.items[0].snippet.resourceId.videoId)
     response = result.items.map(video => (toVideo(video, true))).filter((video) => video.title !== 'Deleted video')
   }
 

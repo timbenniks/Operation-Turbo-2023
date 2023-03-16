@@ -25,7 +25,7 @@ const TwoColumn: React.FC<TwoColumnProps> = ({ layout }: TwoColumnProps) => {
 
   return (
     <div className="row-component flex flex-col md:flex-row">
-      <div className={`w-full md:pr-4 ${sideA}`}>
+      <div className={`w-full mb-8 md:mb-0 md:pr-4 ${sideA}`}>
         <UniformSlot name="sideA" />
       </div>
       <div className={`w-full ${sideB}`}>

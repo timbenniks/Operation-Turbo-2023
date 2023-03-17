@@ -8,10 +8,13 @@ import TwoColumn from "./TwoColumn";
 import List from "./List"
 import Card from "./Card"
 import Container from "./Container"
+import StandAloneImage from "./StandAloneImage"
 
 registerUniformComponent({ type: "hero", component: Hero });
 registerUniformComponent({ type: "twoColumn", component: TwoColumn });
 registerUniformComponent({ type: "cta", component: Cta });
+registerUniformComponent({ type: "standAloneImage", component: StandAloneImage });
+
 registerUniformComponent({ type: "container", component: Container })
 registerUniformComponent({ type: "container", variantId: "fullWidth", component: Container })
 

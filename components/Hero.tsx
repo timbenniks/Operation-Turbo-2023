@@ -7,6 +7,7 @@ type HeroProps = ComponentProps<{
   copyLocation: "left" | "right";
   verticalAlignment: "top" | "middle" | "bottom";
   textAlignment: "left" | "center" | "right";
+  spaceBelow: boolean;
 }>;
 
 const Hero: React.FC<HeroProps> = ({
@@ -14,8 +15,13 @@ const Hero: React.FC<HeroProps> = ({
   copyLocation,
   verticalAlignment,
   textAlignment,
+  spaceBelow,
 }: HeroProps) => (
-  <div className="hero relative md:aspect-[1255/537] overflow-hidden mt-20 md:mt-auto">
+  <div
+    className={`hero relative md:aspect-[1255/537] overflow-hidden mt-20 md:mt-auto ${
+      spaceBelow ? "mb-16" : ""
+    } `}
+  >
     {image && image[0]?.publicId ? (
       <CldImage
         width={image[0]?.width}

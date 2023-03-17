@@ -38,13 +38,28 @@ export default function PageComposition({
   return (
     <>
       <Head>
-        <title>{title?.value as string}</title>
+        <title>{title?.value as string} | Tim Benniks</title>
         <meta property="og:title" content={title?.value as string} />
         <meta name="description" content={description?.value as string} />
         <meta
           property="og:description"
           content={description?.value as string}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "http://schema.org",
+                "@type": "WebSite",
+                url: "https://timbenniks.dev",
+                name: "Tim Benniks: developer relations, video creator, speaker",
+                alternateName: "Tim Benniks",
+              },
+            ]),
+          }}
+        />
+
         <meta
           property="og:url"
           content={`https://timbenniks.dev${router.pathname}`}
@@ -67,6 +82,7 @@ export default function PageComposition({
         alt={title?.value as string}
         width={1920}
         height={1080}
+        gravity="face"
         twitterTitle={title?.value as string}
       />
 

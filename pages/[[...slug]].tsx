@@ -24,6 +24,7 @@ export const getStaticProps = withUniformGetStaticProps({
     const nodes = await getNavigationItems();
     return {
       props: { nodes, preview },
+      revalidate: 86400,
     };
   },
 });

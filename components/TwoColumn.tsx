@@ -2,9 +2,13 @@ import { ComponentProps, UniformSlot } from "@uniformdev/canvas-react";
 
 type TwoColumnProps = ComponentProps<{
   layout: "1-1" | "1-2" | "2-1";
+  spaceBelow: boolean;
 }>;
 
-const TwoColumn: React.FC<TwoColumnProps> = ({ layout }: TwoColumnProps) => {
+const TwoColumn: React.FC<TwoColumnProps> = ({
+  layout,
+  spaceBelow,
+}: TwoColumnProps) => {
   let sideA = "";
   let sideB = "";
 
@@ -24,8 +28,12 @@ const TwoColumn: React.FC<TwoColumnProps> = ({ layout }: TwoColumnProps) => {
   }
 
   return (
-    <div className="row-component flex flex-col md:flex-row">
-      <div className={`w-full mb-8 md:mb-0 md:pr-4 ${sideA}`}>
+    <div
+      className={`row-component flex flex-col md:flex-row ${
+        spaceBelow ? "mb-12" : ""
+      }`}
+    >
+      <div className={`w-full mb-8 md:mb-0 md:pr-12 ${sideA}`}>
         <UniformSlot name="sideA" />
       </div>
       <div className={`w-full ${sideB}`}>

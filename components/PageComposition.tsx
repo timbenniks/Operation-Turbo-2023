@@ -33,6 +33,7 @@ export default function PageComposition({
   });
 
   const { title, description, image } = composition?.parameters || {};
+  const variant = composition?.variant || false;
   const router = useRouter();
 
   return (
@@ -87,7 +88,7 @@ export default function PageComposition({
       />
 
       <Header nodes={nodes} />
-      <main>
+      <main className={`${variant ? "mt-32" : ""}`}>
         <UniformComposition
           data={composition}
           contextualEditingEnhancer={contextualEditingEnhancer}

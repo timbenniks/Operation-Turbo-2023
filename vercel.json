@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/presskit",
+      "destination": "https://presskit.timbenniks.dev",
+      "permanent": true
+    }
+  ]
+}

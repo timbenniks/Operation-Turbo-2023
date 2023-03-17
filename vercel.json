@@ -4,6 +4,72 @@
       "source": "/presskit",
       "destination": "https://presskit.timbenniks.dev",
       "permanent": true
+    },
+    { "source": "/playlists", "destination": "/", "permanent": true },
+    { "source": "tags", "destination": "/", "permanent": true },
+    { "source": "/contact", "destination": "/", "permanent": true },
+    { "source": "/tags/sustainability", "destination": "/", "permanent": true },
+    { "source": "/tags/ConferenceTalk", "destination": "/", "permanent": true },
+    { "source": "/tags/Vlog", "destination": "/", "permanent": true },
+    { "source": "/tags/mach", "destination": "/", "permanent": true },
+    { "source": "/tags/sitecore", "destination": "/", "permanent": true },
+    { "source": "/tags/WebDevelopment", "destination": "/", "permanent": true },
+    { "source": "/tags/Jamstack", "destination": "/", "permanent": true },
+    { "source": "/tags/TimTries", "destination": "/", "permanent": true },
+    { "source": "/tags/Career", "destination": "/", "permanent": true },
+    {
+      "source": "/tags/middlewareProductions",
+      "destination": "/",
+      "permanent": true
+    },
+    { "source": "/tags/Interview", "destination": "/", "permanent": true },
+    { "source": "/tags/Nuxt", "destination": "/", "permanent": true },
+    { "source": "/tags/personal", "destination": "/", "permanent": true },
+    { "source": "/tags/Tech", "destination": "/", "permanent": true },
+    { "source": "/tags/Tutorial", "destination": "/", "permanent": true },
+    {
+      "source": "/tags/CoreWebVitalsExplained",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tags/DevrelRoundTable",
+      "destination": "/",
+      "permanent": true
+    },
+    { "source": "/tags/SoftSkills", "destination": "/", "permanent": true },
+    { "source": "/tags/Webcam", "destination": "/", "permanent": true },
+    { "source": "/tags/Webpack", "destination": "/", "permanent": true },
+    { "source": "/tags/TeamFirst", "destination": "/", "permanent": true },
+    { "source": "/tags/media", "destination": "/", "permanent": true },
+    { "source": "/tags/rendering", "destination": "/", "permanent": true },
+    { "source": "/tags/css", "destination": "/", "permanent": true },
+    { "source": "/tags/nextjs", "destination": "/", "permanent": true },
+    { "source": "/tags/vanilla-js", "destination": "/", "permanent": true },
+    { "source": "/tags/data-fetching", "destination": "/", "permanent": true },
+    { "source": "/tags/head", "destination": "/", "permanent": true },
+    { "source": "/tags/nuxt3", "destination": "/", "permanent": true },
+    { "source": "/tags/vue3", "destination": "/", "permanent": true },
+
+    {
+      "source": "/playlists/nuxt",
+      "destination": "https://www.youtube.com/watch?v=RY60wVg0FZQ&list=PLcoeeDyxakhWb-JuZtbp39-rJXlAnH4UO",
+      "permanent": true
+    },
+    {
+      "source": "/playlists/devrel-roundtable",
+      "destination": "https://www.youtube.com/@timbenniks/playlists",
+      "permanent": true
+    },
+    {
+      "source": "/playlists/interviews",
+      "destination": "https://www.youtube.com/@timbenniks/playlists",
+      "permanent": true
+    },
+    {
+      "source": "/playlists/tim-tries",
+      "destination": "https://www.youtube.com/watch?v=D8AhNcXgrYg&list=PLcoeeDyxakhXyFLClseMeaM00AY2pQpry",
+      "permanent": true
     }
   ]
 }

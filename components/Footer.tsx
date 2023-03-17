@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 type NavLink = {
   name: string;
@@ -10,6 +11,8 @@ type Props = {
 };
 
 const Footer: React.FC<Props> = ({ nodes }: Props) => {
+  const router = useRouter();
+
   const navItems = nodes.filter((node) => node.path !== "/");
 
   return (
@@ -20,7 +23,9 @@ const Footer: React.FC<Props> = ({ nodes }: Props) => {
             <Link
               title="home"
               href="/"
-              className="uppercase font-black text-lg no-underline"
+              className={`uppercase font-black text-lg ${
+                router.asPath === "/" ? "underline" : "no-underline"
+              }`}
             >
               HOME
             </Link>
@@ -32,7 +37,9 @@ const Footer: React.FC<Props> = ({ nodes }: Props) => {
                   <Link
                     title={node.name}
                     href={node.path}
-                    className="uppercase font-black text-lg no-underline"
+                    className={`uppercase font-black text-lg ${
+                      router.asPath === node.path ? "underline" : "no-underline"
+                    }`}
                   >
                     {node.name}
                   </Link>

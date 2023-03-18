@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://operation-turbo-2023.vercel.app",
+  siteUrl: "https://timbenniks.dev",
   generateRobotsTxt: true,
 };

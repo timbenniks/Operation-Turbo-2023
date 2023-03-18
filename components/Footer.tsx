@@ -17,9 +17,9 @@ const Footer: React.FC<Props> = ({ nodes }: Props) => {
 
   return (
     <footer className="w-full bg-[#091A32]">
-      <div className="m-auto flex h-20 max-w-7xl items-center justify-center px-8 xl:px-0">
+      <div className="m-auto flex h-auto md:h-20 py-8 md:py-0 max-w-7xl items-center justify-center px-8 xl:px-0">
         <ul className={`items-center text-center md:space-x-6 text-sm md:flex`}>
-          <li key="home" className="p-auto text-sm">
+          <li key="home" className="my-4 md:my-0 text-sm">
             <Link
               title="home"
               href="/"
@@ -33,7 +33,7 @@ const Footer: React.FC<Props> = ({ nodes }: Props) => {
           {navItems &&
             navItems.map((node) => {
               return (
-                <li key={node.name} className="p-auto text-sm">
+                <li key={node.name} className="my-2 text-sm">
                   {node.path === "/presskit" ? (
                     <a
                       title={node.name}

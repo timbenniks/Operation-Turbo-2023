@@ -76,6 +76,33 @@ export default function PageComposition({
         />
         <meta property="og:site_name" content="Tim Benniks" />
         <meta property="og:type" content="website" />
+
+        <meta name="application-name" content="Tim Benniks" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Tim Benniks" />
+        <meta
+          name="description"
+          content="Tim Benniks: developer relations, video creator, speaker"
+        />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="theme-color" content="#0F223E" />
+
+        <link rel="apple-touch-icon" href="/android-chrome-512x512.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
 
       <CldOgImage

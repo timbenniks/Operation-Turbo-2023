@@ -1,0 +1,22 @@
+{
+  "name": "Tim Benniks",
+  "short_name": "Tim Benniks",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0F223E",
+  "background_color": "#091A32",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

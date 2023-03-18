@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://operation-turbo-2023.vercel.app
+Host: https://timbenniks.dev
 
 # Sitemaps
-Sitemap: https://operation-turbo-2023.vercel.app/sitemap.xml
+Sitemap: https://timbenniks.dev/sitemap.xml

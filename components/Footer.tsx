@@ -34,15 +34,27 @@ const Footer: React.FC<Props> = ({ nodes }: Props) => {
             navItems.map((node) => {
               return (
                 <li key={node.name} className="p-auto text-sm">
-                  <Link
-                    title={node.name}
-                    href={node.path}
-                    className={`uppercase font-black text-lg ${
-                      router.asPath === node.path ? "underline" : "no-underline"
-                    }`}
-                  >
-                    {node.name}
-                  </Link>
+                  {node.path === "/presskit" ? (
+                    <a
+                      title={node.name}
+                      href={node.path}
+                      className="uppercase font-black text-lg no-underline"
+                    >
+                      {node.name}
+                    </a>
+                  ) : (
+                    <Link
+                      title={node.name}
+                      href={node.path}
+                      className={`uppercase font-black text-lg ${
+                        router.asPath === node.path
+                          ? "underline"
+                          : "no-underline"
+                      }`}
+                    >
+                      {node.name}
+                    </Link>
+                  )}
                 </li>
               );
             })}

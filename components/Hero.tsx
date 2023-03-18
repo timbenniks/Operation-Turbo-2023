@@ -41,12 +41,16 @@ const Hero: React.FC<HeroProps> = ({
     <article
       className={`static m-4 md:m-0 md:absolute ${
         textAlignment === "right" ? "md:text-right" : ""
-      } ${textAlignment === "left" ? "md:text-left" : ""} ${
+      } ${!textAlignment || textAlignment === "left" ? "md:text-left" : ""} ${
         textAlignment === "center" ? "md:text-center" : ""
       } ${copyLocation === "right" ? "right-12" : "left-12"} 
       ${verticalAlignment === "top" ? "top-12" : ""} ${
         verticalAlignment === "bottom" ? "bottom-12" : ""
-      } ${verticalAlignment === "middle" ? "top-2/4 md:-translate-y-2/4" : ""}`}
+      } ${
+        !verticalAlignment || verticalAlignment === "middle"
+          ? "top-2/4 md:-translate-y-2/4"
+          : ""
+      }`}
     >
       <UniformSlot
         name="title"

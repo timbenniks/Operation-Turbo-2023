@@ -472,6 +472,134 @@
       "source": "/videos/an-interview-with-scott-tolinski-from-level-up-tutorials",
       "destination": "https://youtube.com/watch?v=zPQ_gQMiT5Y",
       "permanent": true
+    },
+
+    {
+      "source": "/writings/the-future-of-jamstack-is-composable",
+      "destination": "https://dev.to/timbenniks/the-future-of-jamstack-is-composable-3m7g",
+      "permanent": true
+    },
+
+    {
+      "source": "/writings/easy-dynamic-routes-in-your-nuxt-sitemap",
+      "destination": "/writing",
+      "permanent": true
+    },
+
+    {
+      "source": "/writings/delivery-guidelines-for-creative-assets",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/covid-19-work-from-home-how-to-make-your-webcam-look",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/lazy-loading-images-with-cloudinary",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/how-to-create-an-accessible-responsive-image-slider",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/a-new-website",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/how-to-get-your-webcam-to-look-decent-in-a-few-simple-steps",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/fatty-is-alive",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/i-rebuilt-my-website-again",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/i-turned-my-career-on-its-head",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/i-have-been-interviewed-by-repo-lovers",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/the-2015-paris-marathon",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/the-ultimate-guide-to-modern-lazy-loading-techniques",
+      "destination": "https://dev.to/timbenniks/the-2015-paris-marathon-i0l",
+      "permanent": true
+    },
+    {
+      "source": "/writings/an-interview-with-maya-shavin",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/a-developers-guide-to-low-carbon-websites",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/team-first",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/how-to-dynamically-stream-video",
+      "destination": "https://dev.to/timbenniks/how-to-dynamically-stream-video-135f",
+      "permanent": true
+    },
+    {
+      "source": "/writings/how-fatty-was-made",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/low-carbon-websites-luxury-edition",
+      "destination": "https://dev.to/timbenniks/make-the-web-greener-luxury-edition-3nni",
+      "permanent": true
+    },
+    {
+      "source": "/writings/i-was-interviewed-by-zeplin",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/5-tips-to-become-a-better-web-developer",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/sitecore-jss-best-practices-for-front-end-developers",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/writings/my-fitness-story",
+      "destination": "https://dev.to/timbenniks/my-fitness-story-1p97",
+      "permanent": true
+    },
+    {
+      "source": "/writings/why-i-didnt-run-the-2016-marathon",
+      "destination": "https://dev.to/timbenniks/why-i-didnt-run-the-2016-marathon-57e3",
+      "permanent": true
     }
   ]
 }

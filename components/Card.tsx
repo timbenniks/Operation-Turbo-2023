@@ -49,9 +49,7 @@ const Card: React.FC<CardProps> = ({
   );
 
   const titleTag = (
-    <h3 className="text-xl mb-2 line-clamp-1 font-black uppercase underline">
-      {title}
-    </h3>
+    <h3 className="text-xl mb-2 line-clamp-1 font-black underline">{title}</h3>
   );
   const descriptionTag = <p className="line-clamp-2">{description}</p>;
 

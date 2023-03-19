@@ -26,7 +26,6 @@ a {
 
 .title {
   @apply uppercase font-black text-white py-1 px-2;
-  line-height: 1.36 !important;
 }
 
 .flowing-title {
@@ -39,7 +38,6 @@ a {
   left: 8px;
   display: inline;
   padding-left: 0;
-  line-height: 1.6;
 }
 
 .play {

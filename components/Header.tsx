@@ -101,6 +101,7 @@ const Header: React.FC<Props> = ({ nodes }: Props) => {
           className="absolute right-8 top-2"
           width={100}
           height={100}
+          loading="eager"
         />
       </div>
     </header>

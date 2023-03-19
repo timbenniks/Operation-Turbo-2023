@@ -12,6 +12,10 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-lato)", ...fontFamily.sans],
       },
+      lineHeight: {
+        title: "1.36",
+        mobiletitle: "1.46",
+      },
     },
   },
   plugins: [require("@tailwindcss/line-clamp")],

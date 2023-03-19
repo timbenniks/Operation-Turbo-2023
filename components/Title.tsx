@@ -40,7 +40,7 @@ const Title: React.FC<TitleProps> = ({
     <div className={`${bottomMargin ? "mb-6" : "mb-auto"} `}>
       <TitleTag
         tagName={type || "h1"}
-        className={`${size} title flowing-title leading-snug`}
+        className={`${size} title flowing-title leading-mobiletitle md:leading-title`}
       >
         {text}
       </TitleTag>

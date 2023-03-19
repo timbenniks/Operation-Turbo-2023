@@ -18,21 +18,23 @@ const Hero: React.FC<HeroProps> = ({
   spaceBelow,
 }: HeroProps) => (
   <div
-    className={`hero relative md:aspect-[1255/537] overflow-hidden mt-20 md:mt-auto ${
+    className={`hero relative md:aspect-[1400/600] overflow-hidden mt-20 md:mt-auto ${
       spaceBelow ? "mb-16" : ""
     } `}
   >
     {image && image[0]?.publicId ? (
-      <CldImage
-        width={image[0]?.width}
-        height={image[0]?.height}
-        src={image[0]?.publicId}
-        alt={image[0]?.alt || ""}
-        rawTransformations={[image[0]?.transformation]}
-        loading="eager"
-        sizes="100vw"
-        className="static md:absolute left-0 top-0 object-cover"
-      />
+      <div className="aspect-[1400/600] md:aspect-auto">
+        <CldImage
+          width={image[0]?.width}
+          height={image[0]?.height}
+          src={image[0]?.publicId}
+          alt={image[0]?.alt || ""}
+          rawTransformations={[image[0]?.transformation]}
+          loading="eager"
+          sizes="100vw"
+          className="static md:absolute left-0 top-0 object-cover aspect-[1400/600]"
+        />
+      </div>
     ) : (
       <div className="w-full h-full absolute top-0 left-0">
         <div className="w-full h-full rounded-lg bg-white bg-opacity-10" />

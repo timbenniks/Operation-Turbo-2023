@@ -14,7 +14,7 @@ module.exports = {
       },
       lineHeight: {
         title: "1.36",
-        mobiletitle: "1.46",
+        mobiletitle: "1.467",
       },
     },
   },

@@ -5,10 +5,12 @@ type ListProps = ComponentProps<{
     variant?: string;
   };
   moreSpace: boolean;
+  twoItems: boolean;
 }>;
 
 const List: React.FC<ListProps> = ({
   moreSpace,
+  twoItems,
   component: { variant },
 }: ListProps) => (
   <div
@@ -21,9 +23,10 @@ const List: React.FC<ListProps> = ({
       emptyPlaceholder={<div className="h-12" />}
     />
     <div
-      className={`mt-4 grid ${moreSpace ? "gap-12" : "gap-4"} ${
+      className={`mt-4 grid ${moreSpace ? "gap-12" : "gap-4"} 
+      ${
         !variant || variant === "grid"
-          ? "grid-cols-1 md:grid-cols-3"
+          ? `grid-cols-1 ${twoItems ? "md:grid-cols-2" : "md:grid-cols-3"}`
           : "grid-cols-1"
       }`}
     >

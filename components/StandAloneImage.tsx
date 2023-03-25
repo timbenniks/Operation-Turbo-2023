@@ -4,12 +4,14 @@ import type { Image } from "../lib/types";
 
 type StandAloneImageProps = ComponentProps<{
   image: Image[];
-  title: any;
+  title: string;
+  spaceBelow: string;
 }>;
 
 const StandAloneImage: React.FC<StandAloneImageProps> = ({
   image,
   title,
+  spaceBelow,
 }: StandAloneImageProps) => (
   <>
     {image && image[0]?.publicId ? (
@@ -21,7 +23,7 @@ const StandAloneImage: React.FC<StandAloneImageProps> = ({
         rawTransformations={[image[0]?.transformation]}
         loading="eager"
         sizes="100vw"
-        className="object-cover fancy-image"
+        className={`object-cover fancy-image ${spaceBelow ? "mb-8" : ""}`}
       />
     ) : null}
   </>

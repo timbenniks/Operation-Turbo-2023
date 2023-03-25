@@ -2,6 +2,7 @@ import { ComponentProps } from "@uniformdev/canvas-react";
 import { CldImage } from "next-cloudinary";
 import Link from "next/link";
 import theme from "tailwindcss/defaultTheme";
+import { asDay, asMonth, asYear, isDateBeforeToday } from "lib/helpers";
 
 type CardProps = ComponentProps<{
   identifier: string;
@@ -68,13 +69,13 @@ const Card: React.FC<CardProps> = ({
       "
         >
           <span className="block leading-none text-4xl pb-1">
-            {day ? day : "01"}
+            {day || asDay(date)}
           </span>
           <span className="block leading-none text-lg pb-1 uppercase">
-            {month ? month : "JAN"}
+            {month || asMonth(date)}
           </span>
           <span className="block leading-none text-lg pb-1">
-            {year ? year : "2023"}
+            {year || asYear(date)}
           </span>
         </div>
       </div>
@@ -187,7 +188,7 @@ const Card: React.FC<CardProps> = ({
         <div
           className={`${variant ? "w-full md:w-[calc(100%-5rem)]" : "w-full"}`}
         >
-          {upcoming ? (
+          {upcoming || (date && !isDateBeforeToday(new Date(date))) ? (
             <p className="inline-block font-bold text-lg uppercase fancy-title">
               upcoming
             </p>

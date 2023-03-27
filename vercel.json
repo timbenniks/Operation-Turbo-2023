@@ -10,6 +10,11 @@
     { "source": "/contact/", "destination": "/", "permanent": true },
     { "source": "/writings", "destination": "/writing", "permanent": true },
     { "source": "/writings/", "destination": "/writing", "permanent": true },
+    {
+      "source": "/_nuxt/static/1668591621",
+      "destination": "/",
+      "permanent": true
+    },
 
     { "source": "/tags", "destination": "/", "permanent": true },
     { "source": "/tags/", "destination": "/", "permanent": true },

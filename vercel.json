@@ -7,8 +7,12 @@
     },
     { "source": "/playlists", "destination": "/", "permanent": true },
     { "source": "/contact", "destination": "/", "permanent": true },
+    { "source": "/contact/", "destination": "/", "permanent": true },
+    { "source": "/writings", "destination": "/writing", "permanent": true },
+    { "source": "/writings/", "destination": "/writing", "permanent": true },
 
     { "source": "/tags", "destination": "/", "permanent": true },
+    { "source": "/tags/", "destination": "/", "permanent": true },
     { "source": "/tags/sustainability", "destination": "/", "permanent": true },
     { "source": "/tags/ConferenceTalk", "destination": "/", "permanent": true },
     { "source": "/tags/Vlog", "destination": "/", "permanent": true },

@@ -484,6 +484,12 @@
     },
 
     {
+      "source": "/videos/vuejs-amsterdam-vlog-day-1",
+      "destination": "https://www.youtube.com/watch?v=TMf2WznToOA",
+      "permanent": true
+    },
+
+    {
       "source": "/writings/the-future-of-jamstack-is-composable",
       "destination": "https://dev.to/timbenniks/the-future-of-jamstack-is-composable-3m7g",
       "permanent": true

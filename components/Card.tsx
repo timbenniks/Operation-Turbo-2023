@@ -50,7 +50,7 @@ const Card: React.FC<CardProps> = ({
   );
 
   const titleTag = (
-    <h3 className="text-xl mb-2 line-clamp-1 font-black underline">{title}</h3>
+    <h3 className="text-xl mb-2 line-clamp-2 font-black underline">{title}</h3>
   );
   const descriptionTag = <p className="line-clamp-2">{description}</p>;
 
@@ -172,9 +172,15 @@ const Card: React.FC<CardProps> = ({
               <div className="w-full rounded-lg bg-white bg-opacity-10 p-3"></div>
             )}
           </Link>
-          {description && variant ? descriptionTag : null}
+          {/* {description && variant ? descriptionTag : null}
           {!description && variant ? (
             <div className="w-3/4 rounded-lg bg-white bg-opacity-10 mt-4 p-3"></div>
+          ) : null} */}
+          {variant ? (
+            <p className="title flowing-title">
+              {day || asDay(date)} {month || asMonth(date)}{" "}
+              {year || asYear(date)}
+            </p>
           ) : null}
         </div>
       </div>

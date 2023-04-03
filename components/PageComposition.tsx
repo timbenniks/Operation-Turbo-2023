@@ -105,14 +105,16 @@ export default function PageComposition({
         <link rel="manifest" href="/manifest.json" />
       </Head>
 
-      <CldOgImage
-        src={image?.value[0].url as string}
-        alt={title?.value as string}
-        width={1920}
-        height={1080}
-        gravity="face"
-        twitterTitle={title?.value as string}
-      />
+      {image ? (
+        <CldOgImage
+          src={image?.value[0].publicId as string}
+          alt={title?.value as string}
+          width={1920}
+          height={1080}
+          gravity="face"
+          twitterTitle={title?.value as string}
+        />
+      ) : null}
 
       <Header nodes={nodes} />
       <main className={`${variant ? "mt-32" : ""}`}>

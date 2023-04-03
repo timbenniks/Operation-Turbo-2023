@@ -172,10 +172,7 @@ const Card: React.FC<CardProps> = ({
               <div className="w-full rounded-lg bg-white bg-opacity-10 p-3"></div>
             )}
           </Link>
-          {/* {description && variant ? descriptionTag : null}
-          {!description && variant ? (
-            <div className="w-3/4 rounded-lg bg-white bg-opacity-10 mt-4 p-3"></div>
-          ) : null} */}
+
           {variant ? (
             <p className="title flowing-title">
               {day || asDay(date)} {month || asMonth(date)}{" "}

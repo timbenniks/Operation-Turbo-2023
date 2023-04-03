@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
+// Vercel specific, Incremental Static Regeneration. more info https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const secret = req.query.secret as string | undefined;
 
@@ -14,9 +15,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
-    await res.revalidate(path);
+    await res.revalidate(path.startsWith('/') ? path : `/${path}`);
     return res.json({ revalidated: true });
-  } catch (err) {
-    return res.status(500).send('Error revalidating!');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (err: any) {
+    // If there was an error, Next.js will continue
+    // to show the last successfully generated page
+    return res.status(500).json({ message: err.message, path, query: req.query, body: req.body });
   }
 }

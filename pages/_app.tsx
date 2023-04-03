@@ -22,6 +22,7 @@ function MyApp({
   return (
     <UniformContext
       context={serverUniformContext ?? clientContext}
+      //outputType={typeof window === "undefined" ? "edge" : "standard"}
       outputType={"standard"}
     >
       <PlausibleProvider domain="timbenniks.dev">

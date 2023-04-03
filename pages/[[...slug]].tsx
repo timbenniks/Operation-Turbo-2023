@@ -15,11 +15,8 @@ export const getStaticProps = withUniformGetStaticProps({
   callback: async (context, composition) => {
     if (composition) {
       await runEnhancers(composition);
-    } else {
-      return {
-        notFound: true,
-      };
     }
+
     const { preview = false } = context || {};
     const nodes = await getNavigationItems();
     return {

@@ -30,7 +30,7 @@
     "@uniformdev/canvas-react": "^18.33.0",
     "@uniformdev/cli": "^18.33.0",
     "@uniformdev/context": "^18.33.0",
-    "@uniformdev/context-edge-vercel": "^18.29.0",
+    "@uniformdev/context-edge-vercel": "^18.33.0",
     "@uniformdev/context-next": "^18.33.0",
     "@uniformdev/context-react": "^18.33.0",
     "@uniformdev/project-map": "^18.33.0",

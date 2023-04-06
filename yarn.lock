@@ -926,10 +926,10 @@
   dependencies:
     snake-case "^3.0.4"
 
-"@cloudinary-util/url-loader@^3.0.0", "@cloudinary-util/url-loader@^3.0.1":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@cloudinary-util/url-loader/-/url-loader-3.1.0.tgz#a8d1824c9cf6fbe899370009f7b7eeef387b2e49"
-  integrity sha512-FIJhMv3IbOSim4Ll3Jk8utYxqQBekwsw36HZysXSllCin+5qach3PzeLadcbRwITK7epl+zZ+VoAKQlQFhPynA==
+"@cloudinary-util/url-loader@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/url-loader/-/url-loader-3.1.1.tgz#f572fbb7f3e1acf2fcd8f6ea53777b5c4c19b59b"
+  integrity sha512-jR81afElp8GZJQrMHR9jW7ondDPKEsVD8LTSmFDTRZhMoPuRdljQNup8Tz4qOog7OxM+JS0+Gkn3j/fSmgEB8Q==
   dependencies:
     "@cloudinary-util/util" "2.0.1"
     "@cloudinary/url-gen" "^1.8.7"
@@ -1166,7 +1166,7 @@
   dependencies:
     tslib "^2.4.0"
 
-"@tailwindcss/line-clamp@^0.4.2":
+"@tailwindcss/line-clamp@^0.4.4":
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@tailwindcss/line-clamp/-/line-clamp-0.4.4.tgz#767cf8e5d528a5d90c9740ca66eb079f5e87d423"
   integrity sha512-5U6SY5z8N42VtrCrKlsTAA35gy2VSyYtHWCsg1H87NU1SXnEfekTVlrga9fzUDrrHcGi2Lb5KenUWb4lRQT5/g==
@@ -1235,53 +1235,46 @@
   resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.3.tgz#a136f83b0758698df454e328759dbd3d44555311"
   integrity sha512-NfQ4gyz38SL8sDNrSixxU2Os1a5xcdFxipAFxYEuLUlvU2uDwS4NUpsImcf1//SlWItCVMMLiylsxbmNMToV/g==
 
-"@uniformdev/canvas-cloudinary@^17.1.0":
-  version "17.1.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-cloudinary/-/canvas-cloudinary-17.1.0.tgz#8a7d41fb53474b01e3a86ab309863f8c170e174d"
-  integrity sha512-MOef20Xgar0DsbtkWtqy2YoHudmmNyDez1e5de3WWisuNp73wPp5i2jYP/XCoyRn8Q62IBNuFFSy3SSQQYx+Fg==
-  dependencies:
-    "@uniformdev/canvas" "17.1.0"
-
-"@uniformdev/canvas-next@^18.29.0":
+"@uniformdev/canvas-cloudinary@^18.33.0":
   version "18.29.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-next/-/canvas-next-18.29.0.tgz#f73de6b209182c9ba020b278e0b751c4fae2e0e8"
-  integrity sha512-b8y83irAO/0sarNIfWx3HTklzNToUMjqIEVTf3PLUrdVZxZw2defbQ4j9qE0jE9DkFFnz4kMrcMSQBmGYu3Sow==
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-cloudinary/-/canvas-cloudinary-18.29.0.tgz#071df358920611b50c516b52a2d6478564830b68"
+  integrity sha512-WaBlwKU3HIrcrNABoqKA7WwYV1nS5v8vkkrDf3wLOBpzTdgR2imthI1R0DTj49u8DcKNAGWYV5sLBMO6cuTIYA==
   dependencies:
-    "@uniformdev/canvas" "18.29.0"
-    "@uniformdev/canvas-react" "18.29.0"
-    "@uniformdev/project-map" "18.29.0"
+    "@uniformdev/canvas" "^18.20.0"
 
-"@uniformdev/canvas-react@18.29.0", "@uniformdev/canvas-react@^18.29.0":
-  version "18.29.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-react/-/canvas-react-18.29.0.tgz#f50781709f27b51256d323e608862aef7908aeca"
-  integrity sha512-HO8rK6OUtG1A+FAmgrH+I7O732HdE21hmWvQZSwwUnkCU/1gPfv4+bCQRmhGgeojTbJGUDVdHZYXmL+vErVw+A==
+"@uniformdev/canvas-next@^18.33.0":
+  version "18.33.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-next/-/canvas-next-18.33.0.tgz#50c1f4556f5add122d6965c2e893e67c1704bfa9"
+  integrity sha512-SRmcBDI5B8kDYtrTWWrDV3WrKXWsjanTb54/w2BY0n53BRfUgX69AU16EvKcdsM33wob0qhqwR+c6harDlFI0A==
   dependencies:
-    "@uniformdev/canvas" "18.29.0"
-    "@uniformdev/context" "18.29.0"
-    "@uniformdev/context-react" "18.29.0"
+    "@uniformdev/canvas" "18.33.0"
+    "@uniformdev/canvas-react" "18.33.0"
+    "@uniformdev/project-map" "18.33.0"
 
-"@uniformdev/canvas@17.1.0":
-  version "17.1.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas/-/canvas-17.1.0.tgz#4752c15a02c4108019cdbdd1e59ff4cb971dca4e"
-  integrity sha512-EumhKAVEd6/H9m+OHEJ3nsOrg9A3nx6zUn98L9z9Z1pYYtmH+KWBk6skdVu8HSkEaxk4TrDUgX63I8XGH8DefQ==
+"@uniformdev/canvas-react@18.33.0", "@uniformdev/canvas-react@^18.33.0":
+  version "18.33.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-react/-/canvas-react-18.33.0.tgz#a27e3193c1f0cbb0a136404aba8a3705d9e68d18"
+  integrity sha512-bGglXlksgHpTc0Se9ghWSevADsw7aSZg6JxklngS25E/Se1zhEKVrhrcQZW0gBBdnofQyaNzANq8WylGk/X21Q==
   dependencies:
-    "@uniformdev/context" "^17.1.0"
+    "@uniformdev/canvas" "18.33.0"
+    "@uniformdev/context" "18.33.0"
+    "@uniformdev/context-react" "18.33.0"
 
-"@uniformdev/canvas@18.29.0", "@uniformdev/canvas@^18.29.0":
-  version "18.29.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas/-/canvas-18.29.0.tgz#6cffcc1aa1a8b9de6a7d10a61c671f3bbe5e2ddc"
-  integrity sha512-Bw2V+Sftj7tTprxI+nS83Wimfxk3ITB5CKBUJ8GjyounBzKuPwtR3ok8cpphGCoNF0EDJFkBR2A1hN5aeNDBOA==
+"@uniformdev/canvas@18.33.0", "@uniformdev/canvas@^18.20.0", "@uniformdev/canvas@^18.33.0":
+  version "18.33.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas/-/canvas-18.33.0.tgz#f737566ee573f82f93335b092340b6cf2954515e"
+  integrity sha512-TwwPC0iqz1ZuINn56FY6fnOOFVCVtBoxPoKAsqtBW8J5P0XYKWVANA1d8PzizA6klsdSXp4W3DeyhKIlJv+k4A==
   dependencies:
-    "@uniformdev/context" "18.29.0"
+    "@uniformdev/context" "18.33.0"
 
-"@uniformdev/cli@^18.29.0":
-  version "18.29.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/cli/-/cli-18.29.0.tgz#3b59936c9d87606b96c432b403f4582eb00c7002"
-  integrity sha512-D7/5pQfebG+9AmATYQ7i+lk5Kingp0sgiHMIYx2WLb92zNCm+imxWDZ93X3AuWhjAsTv4hWAimdwt/Yyhdf6GA==
+"@uniformdev/cli@^18.33.0":
+  version "18.33.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/cli/-/cli-18.33.0.tgz#f089384c43572e601a4b47f36fdf925337c50793"
+  integrity sha512-f3+zls5ibeOuRKnlkW13aNIkQ5Qr8Qd/6vlwThK5SZ0q/1MLq1JiHEzCVmneqlcCXe5SO4BE4KG/QCuIEhCENA==
   dependencies:
-    "@uniformdev/canvas" "18.29.0"
-    "@uniformdev/context" "18.29.0"
-    "@uniformdev/project-map" "18.29.0"
+    "@uniformdev/canvas" "18.33.0"
+    "@uniformdev/context" "18.33.0"
+    "@uniformdev/project-map" "18.33.0"
     chalk "^5.2.0"
     diff "^5.0.0"
     dotenv "^16.0.3"
@@ -1299,48 +1292,48 @@
     open "9.0.0"
     ora "6.2.0"
     posthog-node "2.6.0"
-    slugify "1.6.5"
+    slugify "1.6.6"
     yargs "^17.6.2"
     zod "3.21.4"
 
-"@uniformdev/context-edge-vercel@^18.29.0":
-  version "18.29.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context-edge-vercel/-/context-edge-vercel-18.29.0.tgz#e1896df56651d70da065a3c562361290a5e0d238"
-  integrity sha512-Rpz2UCqujnTFGSEefI7Q08QZ0EZUp5v7YdhivEiwK7LeU/yR0+1+B0QiyRIuWEKRzEYs1Zal+NJWWE/eOZ1fSQ==
+"@uniformdev/context-edge-vercel@^18.33.0":
+  version "18.33.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/context-edge-vercel/-/context-edge-vercel-18.33.0.tgz#eaca8180a34a91893e8e9b92da4a232cb9f55ba8"
+  integrity sha512-1bAqf3Ei3tmTX9vjaHNX5pHCW3yURX4T3SZCQ9y+CpMLF9D00bXF1XzTsyZGYPOYOtpFVVSYtgkmbhyVm+0nfg==
   dependencies:
-    "@uniformdev/context" "18.29.0"
-    "@uniformdev/context-edge" "18.29.0"
+    "@uniformdev/context" "18.33.0"
+    "@uniformdev/context-edge" "18.33.0"
     cookie "^0.5.0"
 
-"@uniformdev/context-edge@18.29.0":
-  version "18.29.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context-edge/-/context-edge-18.29.0.tgz#8955e93aae872475584dbd0516b21e5528698947"
-  integrity sha512-n64F7WT93oPnpTQQ4g+JzE+0gghagnrr3basHD+16UpkWXhV2m6ZtDUzbi/PdNNAKEU6jQj/nwdJFkw/3vCJVw==
+"@uniformdev/context-edge@18.33.0":
+  version "18.33.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/context-edge/-/context-edge-18.33.0.tgz#a42a4c07780693f7521b1a4dd4744563d3ed72ad"
+  integrity sha512-Tn/2PkBhu4ycGR9Kd3pBVwdWhQa+6dSU5vz0yEXBRC2diwy/6MES28yKmCPTSIpB/6uAaJzbU6UXsFYL7YeAUQ==
   dependencies:
-    "@uniformdev/context" "18.29.0"
+    "@uniformdev/context" "18.33.0"
     cookie "^0.5.0"
 
-"@uniformdev/context-next@^18.29.0":
-  version "18.29.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context-next/-/context-next-18.29.0.tgz#8b1954b6d04d5750ed4490ffcc3b8fb6f4d7c9e0"
-  integrity sha512-Bc6ls0TqKzMCM9OxtxzmSxtZv6nalSW9QiL9GMRDP2Vx5pIQ+Lj5MgCy9fMm+B+6NihaVcUFaJlFPtq1FGEkTg==
+"@uniformdev/context-next@^18.33.0":
+  version "18.33.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/context-next/-/context-next-18.33.0.tgz#c6880a75c76b3d01fbe009d83229ff6c44ff6578"
+  integrity sha512-RnK3hiheVmcdSBnRvl2n9LttkTiNcF55EjgYZ6dOGiBltK2GUZl5M3pdMasK2C0clB/pZT1wzeoXmnSgea5doQ==
   dependencies:
-    "@uniformdev/context" "18.29.0"
+    "@uniformdev/context" "18.33.0"
     cookie "^0.5.0"
 
-"@uniformdev/context-react@18.29.0", "@uniformdev/context-react@^18.29.0":
-  version "18.29.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context-react/-/context-react-18.29.0.tgz#54a764afe2af2591b488a630af788c909f259ae6"
-  integrity sha512-VZHgfdCzSO1HNZyfsCWHVuDO/Lz8LLk/N9mvRdjMm/M8srenZun8oaYAqJ/EZ/sGhwF6gpjt/qH6r9XEuUl3PA==
+"@uniformdev/context-react@18.33.0", "@uniformdev/context-react@^18.33.0":
+  version "18.33.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/context-react/-/context-react-18.33.0.tgz#6ca4092a6601fc88ae987c80a31045386f4444d5"
+  integrity sha512-pog0w7mKZVC5ZipFO5JIREjB2TdcNETuBStnFooZCrK138Xmeu1uVsEon2G0vxMmU7TQ8Qi799IeZRaoFUybyw==
   dependencies:
-    "@uniformdev/context" "18.29.0"
+    "@uniformdev/context" "18.33.0"
     cookie "0.5.0"
     dequal "2.0.3"
 
-"@uniformdev/context@18.29.0", "@uniformdev/context@^18.29.0":
-  version "18.29.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context/-/context-18.29.0.tgz#d7fd50f76e423f7892314b20184fd2e18592fdf5"
-  integrity sha512-lo3mxb4ywrycBllH7+ZwfKA//dTrUew0PkecFnoTH2x85tLzBLiuBSl4+jVTiZNTNs9OZr7TNDRse4a1Fy12dA==
+"@uniformdev/context@18.33.0", "@uniformdev/context@^18.33.0":
+  version "18.33.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/context/-/context-18.33.0.tgz#add03a6d76a7089e5947df0521ec98ad4a95da9a"
+  integrity sha512-SDm9Jr4aAdXT4mG62XbQWraQxAJCz1n/HsQ7NKJBD8JOG0gCYySX78KIt5yD1Jh/OhJNxysFJV6p8a2vRnvs4Q==
   dependencies:
     dequal "^2.0.2"
     js-cookie "3.0.1"
@@ -1348,24 +1341,13 @@
     p-limit "^3.1.0"
     rfdc "^1.3.0"
 
-"@uniformdev/context@^17.1.0":
-  version "17.7.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context/-/context-17.7.0.tgz#8a2b4dbeb7241d5d8069df1365611ef4c80b5d61"
-  integrity sha512-BtCk4DSTzqSW6Ze8v9lOsOFOtEYmy7v8MtIaRpkPy+O4zr392+roxUQW9mefxH0co8ArLCoyG3a+bKtvEGAHwQ==
+"@uniformdev/project-map@18.33.0", "@uniformdev/project-map@^18.33.0":
+  version "18.33.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/project-map/-/project-map-18.33.0.tgz#964e9a3df58964ef1f6d0adc2e2be36d3949045d"
+  integrity sha512-jYm3H8h3akmRH9Yy+WQVD46hgv/nDQcawz08aKJaztro+ZMY4vYGfrN4H3PNxkqFt1DByCiC055itd44Pfpqcw==
   dependencies:
-    dequal "^2.0.2"
-    js-cookie "3.0.1"
-    mitt "^3.0.0"
-    p-limit "^3.1.0"
-    rfdc "^1.3.0"
-
-"@uniformdev/project-map@18.29.0", "@uniformdev/project-map@^18.29.0":
-  version "18.29.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/project-map/-/project-map-18.29.0.tgz#27287f771f349e3181bdfcf545ccc84bdcd87baa"
-  integrity sha512-ycNx+Gof56GK35CvlcDS1IYlhpiqdaJYAVMmKMUdHBAIsmTbnrt5cuPXC2X1o5tVVZ2xZCLtAvCMU27EbOrwOQ==
-  dependencies:
-    "@uniformdev/canvas" "18.29.0"
-    "@uniformdev/context" "18.29.0"
+    "@uniformdev/canvas" "18.33.0"
+    "@uniformdev/context" "18.33.0"
 
 acorn@^8.5.0:
   version "8.8.2"
@@ -1856,7 +1838,7 @@ contentful-sdk-core@^7.0.5:
     p-throttle "^4.1.1"
     qs "^6.9.4"
 
-contentful@^9.3.3:
+contentful@^9.3.5:
   version "9.3.5"
   resolved "https://registry.yarnpkg.com/contentful/-/contentful-9.3.5.tgz#4644461f7b34a99ed64a10511743e7c278a71a00"
   integrity sha512-QVXHwD9nxREBpcemC6Po2LUYStmBBHPyVbN3SKzkR+WmIZhflF6x+TDmmz2jcCg/RSN+INDZbhe8FQ1S/zTE8w==
@@ -3266,12 +3248,12 @@ nanoid@^3.3.4:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
   integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
 
-next-cloudinary@^4.0.0:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/next-cloudinary/-/next-cloudinary-4.1.1.tgz#755d6fe4bb411f1c5b5b0ca8e9cfa92cbbec9db5"
-  integrity sha512-6yxIWLK0n9af8X9QkrCTqSCYzd2p5tpJkxMbQPsQwx/LcndjRp4qXSeHSa0eZZYBi2DtJR90haukSBfaqfnofg==
+next-cloudinary@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/next-cloudinary/-/next-cloudinary-4.3.0.tgz#8c8b9cbdd99ddb47d54ec29c36b65cdc0f94d44b"
+  integrity sha512-nf2CzTUUoPZFGiIZ8zdbxlmnKfI8GJDcGin+uKvkC8RAVszdPIc26YhaOS6rz4oMc1EZg8R3BT7EMiLJC7bOzw==
   dependencies:
-    "@cloudinary-util/url-loader" "^3.0.1"
+    "@cloudinary-util/url-loader" "^3.1.1"
     "@cloudinary-util/util" "^2.0.1"
     "@cloudinary/url-gen" "^1.8.6"
 
@@ -3292,7 +3274,7 @@ next-pwa@^5.6.0:
     workbox-webpack-plugin "^6.5.4"
     workbox-window "^6.5.4"
 
-next-sitemap@^4.0.5:
+next-sitemap@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-4.0.6.tgz#9e6c77387a6fb548cac319876240c3e25c196d6d"
   integrity sha512-pZ9tynYe6mRR189qZqcOlWVgM1Gxo07BJQW0AjerKmLwQOt+6FQMdaDgifgCt6jDT3Y3EG/+NUDDZRcd0gbPkA==
@@ -4084,10 +4066,10 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-slugify@1.6.5:
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.6.5.tgz#c8f5c072bf2135b80703589b39a3d41451fbe8c8"
-  integrity sha512-8mo9bslnBO3tr5PEVFzMPIWwWnipGS0xVbYf65zxDqfNwmzYn1LpiKNrR6DlClusuvo+hDHd1zKpmfAe83NQSQ==
+slugify@1.6.6:
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.6.6.tgz#2d4ac0eacb47add6af9e04d3be79319cbcc7924b"
+  integrity sha512-h+z7HKHYXj6wJU+AnS/+IH8Uh9fdcX1Lrhg1/VMdf9PwoBQXFcXiAdsy2tSK0P6gKwJLXp02r90ahUCqHk9rrw==
 
 snake-case@^3.0.4:
   version "3.0.4"

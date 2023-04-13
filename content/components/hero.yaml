@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: hero
+name: Hero
+icon: clapper-board
+parameters:
+  - id: label
+    name: Label
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: image
+    name: Image
+    type: cloudinary-image
+    helpText: ''
+    typeConfig:
+      defaultoptions: q_auto,f_auto
+  - id: copyLocation
+    name: Copy location
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: left
+          value: left
+        - text: right
+          value: right
+  - id: verticalAlignment
+    name: Vertical Alignment
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: top
+          value: top
+        - text: middle
+          value: middle
+        - text: bottom
+          value: bottom
+  - id: textAlignment
+    name: Text Alignment
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: left
+          value: left
+        - text: center
+          value: center
+        - text: right
+          value: right
+  - id: spaceBelow
+    name: Space below
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots:
+  - id: title
+    name: Title
+    allowedComponents:
+      - title
+    inheritAllowedComponents: false
+  - id: description
+    name: Description
+    allowedComponents:
+      - richText
+    inheritAllowedComponents: false
+  - id: cta
+    name: CTA
+    allowedComponents:
+      - cta
+    inheritAllowedComponents: false
+titleParameter: label
+canBeComposition: false
+created: '2023-01-21T16:14:01.018666+00:00'
+updated: '2023-04-01T09:53:42.50513+00:00'

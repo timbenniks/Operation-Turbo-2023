@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: twoColumn
+name: Two Column
+icon: view-split
+parameters:
+  - id: label
+    name: Label
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: layout
+    name: Layout
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: 1-1
+          value: 1-1
+        - text: 1-2
+          value: 1-2
+        - text: 2-1
+          value: 2-1
+  - id: spaceBelow
+    name: Space Below
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots:
+  - id: sideA
+    name: Side A
+    allowedComponents:
+      - richText
+      - title
+      - $loop
+      - cta
+      - card
+      - list
+      - image
+      - standAloneImage
+    inheritAllowedComponents: false
+  - id: sideB
+    name: Side B
+    allowedComponents:
+      - cta
+      - richText
+      - title
+      - $loop
+      - card
+      - list
+      - image
+      - standAloneImage
+    inheritAllowedComponents: false
+titleParameter: label
+canBeComposition: false
+created: '2023-03-02T08:29:32.560636+00:00'
+updated: '2023-03-17T20:23:01.081666+00:00'

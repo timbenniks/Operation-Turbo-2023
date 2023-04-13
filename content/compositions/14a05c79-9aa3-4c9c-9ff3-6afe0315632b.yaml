@@ -1,0 +1,132 @@
+composition:
+  _name: Videos
+  _id: 14a05c79-9aa3-4c9c-9ff3-6afe0315632b
+  _slug: videos
+  type: page
+  variant: noHero
+  parameters:
+    image:
+      type: cloudinary-media-selector
+      value:
+        - alt: ""
+          url: >-
+            https://res.cloudinary.com/dwfcofnrd/image/fetch/v1662118284/https://images.ctfassets.net/zutbjtt6qhdz/7fgJxEfj5SY1Z8SubN2kn1/23d12a41d943b80c58c06b3bdbcc4833/title2.jpg
+          ratio: "16:9"
+          width: "1920"
+          format: jpg
+          height: "1080"
+          widths: "1200"
+          caption: ""
+          options: q_auto,f_auto
+          version: 1662118284
+          publicId: >-
+            https://images.ctfassets.net/zutbjtt6qhdz/7fgJxEfj5SY1Z8SubN2kn1/23d12a41d943b80c58c06b3bdbcc4833/title2.jpg
+          createdAt: "2022-09-02T11:31:24Z"
+          previewUrl: >-
+            https://res.cloudinary.com/dwfcofnrd/image/fetch/q_auto:low,f_auto,w_150/https://images.ctfassets.net/zutbjtt6qhdz/7fgJxEfj5SY1Z8SubN2kn1/23d12a41d943b80c58c06b3bdbcc4833/title2.jpg
+          resourceType: image
+          transformation: ""
+          globalImageOptions: q_auto,f_auto
+    title:
+      type: text
+      value: Videos
+    description:
+      type: text
+      value: An overview of my YouTube videos
+  slots:
+    components:
+      - _id: 6e6cdca6-21cb-4e23-b789-070fec4cdde1
+        type: container
+        slots:
+          content:
+            - _id: 94044516-a5e1-4746-8915-4d3b469f5c66
+              type: list
+              slots:
+                list:
+                  - _id: 90b4eb73-099e-425f-928c-e7e787185197
+                    type: $loop
+                    slots:
+                      body:
+                        - _id: 73841f8f-2ff3-4c38-a523-0f6d79e49670
+                          type: card
+                          parameters:
+                            type:
+                              type: select
+                              value: video
+                            media:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Videos By Playlist Content result Loop
+                                  Item/image
+                            title:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Videos By Playlist Content result Loop
+                                  Item/title
+                            identifier:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Videos By Playlist Content result Loop
+                                  Item/videoId
+                    _dataResources:
+                      Videos By Playlist Content result Loop Item:
+                        type: sys-reserved-loop
+                        variables:
+                          connectedData: /Videos By Playlist Content/result
+                          connectedDataRequired: "false"
+                title:
+                  - _id: 134174af-6f2f-4c2c-a65f-72b660bf7049
+                    type: title
+                    variant: large
+                    parameters:
+                      text:
+                        type: text
+                        value: Videos
+                      type:
+                        type: select
+                        value: h1
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+                description:
+                  - _id: eba1523b-af33-4252-a7a5-220dc2787e79
+                    type: richText
+                    parameters:
+                      label:
+                        type: text
+                        value: videos desc
+                      content:
+                        type: quill-rte
+                        value:
+                          rteValue: >-
+                            <p>These are the latest 50 videos I made on my
+                            personal channel. Check out to my YouTube channel at
+                            <a href="https://youtube.com/timbenniks"
+                            rel="noopener noreferrer"
+                            target="_blank">youtube.com/timbenniks</a>. If you
+                            like what you see, please subscribe!</p>
+              parameters:
+                label:
+                  type: text
+                  value: hero
+        parameters:
+          label:
+            type: text
+            value: Main container
+  _dataResources:
+    Videos By Playlist Content:
+      type: videosByPlaylist
+      variables:
+        count: "100"
+created: "2023-03-11T18:30:23.572758+00:00"
+modified: "2023-03-17T21:44:09.936179+00:00"
+pattern: false

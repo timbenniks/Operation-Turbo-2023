@@ -1,0 +1,696 @@
+composition:
+  _name: Home
+  _id: 6032524d-e922-436b-8fc1-392471a3ab91
+  _slug: /
+  type: page
+  parameters:
+    image:
+      type: cloudinary-image
+      value:
+        - alt: ""
+          url: >-
+            https://res.cloudinary.com/dwfcofnrd/image/upload/v1679243905/social_k2lcce.png
+          uuid: ecdaed44-d279-40ef-9614-6a9a9b7acfb5
+          ratio: "16:9"
+          width: "1920"
+          format: png
+          height: "1080"
+          widths: "1200"
+          caption: ""
+          options: q_auto,f_auto
+          version: 1679243905
+          publicId: social_k2lcce
+          createdAt: "2023-03-19T16:38:25Z"
+          previewUrl: >-
+            https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/social_k2lcce.png
+          resourceType: image
+          transformation: ""
+          globalImageOptions: q_auto,f_auto
+    title:
+      type: text
+      value: Homepage
+    description:
+      type: text
+      value: >-
+        This is the personal website of Tim Benniks. This is where you can find
+        my public speaking schedule and my videos.
+  slots:
+    components:
+      - _id: d7d83914-c21f-4567-b948-7928f0911a9a
+        type: container
+        slots:
+          content:
+            - _id: 0bae1a05-183a-4cdb-a733-84f9b51760c7
+              type: hero
+              slots:
+                title:
+                  - _id: 3075b7a1-d8fe-4a1f-afb0-20d48eb40e93
+                    type: title
+                    variant: large
+                    parameters:
+                      text:
+                        type: text
+                        value: Tim Benniks
+                      type:
+                        type: select
+                        value: h1
+                  - _id: 715193fa-3654-464b-947b-4d9ebc40b7f1
+                    type: title
+                    variant: small
+                    parameters:
+                      text:
+                        type: text
+                        value: Developer and content creator
+                      type:
+                        type: select
+                        value: h2
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+              parameters:
+                image:
+                  type: cloudinary-image
+                  value:
+                    - alt: ""
+                      url: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/v1677741361/Tim/Tim-oct-2020.jpg
+                      uuid: e5e0ef41-f081-4614-95c9-5b324a59e16a
+                      width: "5472"
+                      format: jpg
+                      height: "3080"
+                      caption: ""
+                      options: q_auto,f_auto
+                      version: 1677741361
+                      publicId: Tim/Tim-oct-2020
+                      createdAt: "2023-03-02T07:16:01Z"
+                      previewUrl: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto,f_auto,w_150/Tim/Tim-oct-2020.jpg
+                      resourceType: image
+                      transformation: t_TimsHero
+                      globalImageOptions: q_auto,f_auto
+                label:
+                  type: text
+                  value: Hero
+                copyLocation:
+                  type: select
+                  value: right
+                textAlignment:
+                  type: select
+                  value: right
+                verticalAlignment:
+                  type: select
+                  value: bottom
+            - _id: 26070e3f-c625-420f-bb0f-d29347218a96
+              type: richText
+              variant: addedSpace
+              parameters:
+                label:
+                  type: text
+                  value: About Tim
+                content:
+                  type: quill-rte
+                  value:
+                    rteValue: >-
+                      <p>Director of developer relations at&nbsp;<a
+                      href="https://uniform.dev" rel="noopener noreferrer"
+                      target="_blank">Uniform</a>,&nbsp;<a
+                      href="https://machalliance.org" rel="noopener noreferrer"
+                      target="_blank">MACH</a> Alliance Tech Council
+                      member,&nbsp;<a href="https://nuxt.com/" rel="noopener
+                      noreferrer"
+                      target="_blank">Nuxt</a>&nbsp;ambassador,&nbsp;<a
+                      href="https://algolia.com" rel="noopener noreferrer"
+                      target="_blank">Algolia</a> ambassador, <a
+                      href="https://supabase.com" rel="noopener noreferrer"
+                      target="_blank">Supabase</a> ambassador, and&nbsp;<a
+                      href="https://youtube.com/timbenniks" rel="noopener
+                      noreferrer" target="_blank">content creator</a>. A Dutchie
+                      living in France.</p>
+            - _id: a345ec33-22bd-4b88-9ff9-75c583b0ede5
+              type: list
+              slots:
+                list:
+                  - _id: a817914e-279d-484d-868c-9ed3e42ead7a
+                    type: $loop
+                    slots:
+                      body:
+                        - _id: fc77975c-6609-4f66-a211-2816360f7fb9
+                          type: card
+                          parameters:
+                            date:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Latest Videos By Upload Playlist result Loop
+                                  Item/date
+                            type:
+                              type: select
+                              value: video
+                            media:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Latest Videos By Upload Playlist result Loop
+                                  Item/image
+                            title:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Latest Videos By Upload Playlist result Loop
+                                  Item/title
+                            identifier:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Latest Videos By Upload Playlist result Loop
+                                  Item/videoId
+                            description:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Latest Videos By Upload Playlist result Loop
+                                  Item/description
+                    _dataResources:
+                      Latest Videos By Upload Playlist result Loop Item:
+                        type: sys-reserved-loop
+                        variables:
+                          connectedData: /Latest Videos By Upload Playlist/result
+                          connectedDataRequired: "false"
+                title:
+                  - _id: 895a6d26-ae6c-483f-a514-f574570574ad
+                    type: title
+                    variant: medium
+                    parameters:
+                      text:
+                        type: text
+                        value: Latest videos
+                      type:
+                        type: select
+                        value: h3
+              variant: grid
+              parameters:
+                label:
+                  type: text
+                  value: Latest vids
+        parameters:
+          label:
+            type: text
+            value: Main group
+      - _id: d35b2a31-d537-4de1-ba6a-24e979f93db1
+        type: container
+        slots:
+          content:
+            - _id: e83ea49e-896f-4683-b987-418877518149
+              type: twoColumn
+              slots:
+                sideA:
+                  - _id: 36acdfb9-510b-44f1-9a4b-381aaca507fc
+                    type: list
+                    slots:
+                      list:
+                        - _id: a42162b7-aeb6-4b87-b8b8-5a43e50cb978
+                          type: $loop
+                          slots:
+                            body:
+                              - _id: 00f49e5d-9df9-407f-99b1-083fa3b67dec
+                                type: card
+                                parameters:
+                                  day:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Upcoming Talks result Loop
+                                        Item/date/day
+                                  type:
+                                    type: select
+                                    value: talk
+                                  year:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Upcoming Talks result Loop
+                                        Item/date/year
+                                  month:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Upcoming Talks result Loop
+                                        Item/date/month
+                                  title:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Upcoming Talks result Loop
+                                        Item/conference
+                                  identifier:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: /Upcoming Talks result Loop Item/link
+                                  description:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: /Upcoming Talks result Loop Item/talk
+                          _dataResources:
+                            Upcoming Talks result Loop Item:
+                              type: sys-reserved-loop
+                              variables:
+                                connectedData: /Upcoming Talks/result
+                                connectedDataRequired: "false"
+                      title:
+                        - _id: 3c049b67-0386-43ee-9846-30ff5054558d
+                          type: title
+                          variant: small
+                          parameters:
+                            text:
+                              type: text
+                              value: Upcoming talks
+                            type:
+                              type: select
+                              value: h3
+                    variant: list
+                    parameters:
+                      label:
+                        type: text
+                        value: Upcoming talks
+                sideB:
+                  - _id: e316253d-4c64-4577-bf06-4afbaf63abdc
+                    type: title
+                    variant: small
+                    parameters:
+                      text:
+                        type: text
+                        value: Director of developer relations at Uniform
+                      type:
+                        type: select
+                        value: h3
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+                  - _id: 4ff2877a-64bb-4717-b831-b87196c71ba2
+                    type: richText
+                    parameters:
+                      label:
+                        type: text
+                        value: About Uniform
+                      content:
+                        type: quill-rte
+                        value:
+                          rteValue: >-
+                            <p>As director of developer relations at Uniform,
+                            I'm dedicated to representing Uniform to the
+                            developer community, partners, and customers.
+                            Additionally, I set up processes and KPIs along with
+                            their measurement vis-à-vis digital experience
+                            composition, and regularly speak at
+                            conferences.</p><p><br></p><p>Uniform Digital
+                            Experience Composition Platform (Uniform DXCP) makes
+                            headless and composable technologies a boon for
+                            business and technical professionals, accelerating
+                            cross-team delivery, innovation, and agility. Here's
+                            how:</p><p><br></p><p>With digital experience
+                            composition, nondevelopers such as marketers can
+                            independently create and manage digital experiences
+                            with content from various sources and deliver those
+                            experiences to multiple channels. Consequently,
+                            developers need not build and maintain integration
+                            logic for those content sources, gaining time and
+                            freedom to undertake value-add tasks that require
+                            technical expertise.</p><p><br></p><p>Furthermore,
+                            Uniform DXCP offers a single source of truth for
+                            content and experience composition. Hence, teams can
+                            work collaboratively and efficiently to create and
+                            manage content in one place for omnichannel delivery
+                            without duplicating efforts or creating silos,
+                            leading to consistency in brand messaging and user
+                            experience.</p>
+                  - _id: e296ca84-2951-411d-b659-68ca011fde5e
+                    type: cta
+                    parameters:
+                      text:
+                        type: text
+                        value: Learn more about Uniform
+                      externalLink:
+                        type: text
+                        value: https://uniform.dev
+              parameters:
+                label:
+                  type: text
+                  value: talks and about
+                layout:
+                  type: select
+                  value: 1-1
+        variant: fullWidth
+        parameters:
+          label:
+            type: text
+            value: Talks and about group
+          background:
+            type: text
+            value: "#091A32"
+      - _id: a21f2758-5002-423e-8977-624cb3aa2795
+        type: container
+        slots:
+          content:
+            - _id: dfd4d66a-9766-451b-85bf-45bea3e4867c
+              type: list
+              slots:
+                list:
+                  - _id: c7d2c8a6-f7a8-4d3d-b11e-7f96b84d9c91
+                    type: $loop
+                    slots:
+                      body:
+                        - _id: fb80af03-9783-4d0f-9b1f-07a536400636
+                          type: card
+                          parameters:
+                            date:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Upcoming Live Streams result Loop Item/date
+                            type:
+                              type: select
+                              value: video
+                            media:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Upcoming Live Streams result Loop Item/image
+                            title:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Upcoming Live Streams result Loop Item/title
+                            upcoming:
+                              type: checkbox
+                              value: true
+                            identifier:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Upcoming Live Streams result Loop
+                                  Item/videoId
+                            description:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Upcoming Live Streams result Loop
+                                  Item/description
+                    _dataResources:
+                      Upcoming Live Streams result Loop Item:
+                        type: sys-reserved-loop
+                        variables:
+                          connectedData: /Upcoming Live Streams/result
+                          connectedDataRequired: "false"
+                title:
+                  - _id: 54c153b4-2a51-4403-bbe4-ffc823e754fc
+                    type: title
+                    variant: medium
+                    parameters:
+                      text:
+                        type: text
+                        value: Upcoming live streams
+                      type:
+                        type: select
+                        value: h3
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+                description:
+                  - _id: 46e339be-cca4-425c-b7d1-b2b56fa7e6a7
+                    type: richText
+                    parameters:
+                      label:
+                        type: text
+                        value: live streams description
+                      content:
+                        type: quill-rte
+                        value:
+                          rteValue: >-
+                            <p>I do a variety of live streams: <a
+                            href="https://www.youtube.com/playlist?list=PLcoeeDyxakhXyFLClseMeaM00AY2pQpry"
+                            rel="noopener noreferrer" target="_blank">Tim
+                            tries</a>, <a
+                            href="https://www.youtube.com/playlist?list=PLkmdKA3C-iOOvftzsLWsfTy6X7MoteT5e"
+                            rel="noopener noreferrer" target="_blank">Unpack the
+                            stack</a>, and <a
+                            href="https://www.youtube.com/playlist?list=PLkmdKA3C-iOM5taAQBkkVAT5gNYncvM8d"
+                            rel="noopener noreferrer" target="_blank">Composable
+                            without compromise</a>.</p>
+              variant: grid
+              parameters:
+                label:
+                  type: text
+                  value: Live streams
+        parameters:
+          label:
+            type: text
+            value: Secondary group
+      - _id: 77223420-73a0-4641-af9a-2d055204415b
+        type: container
+        slots:
+          content:
+            - _id: fb2ecb28-a913-4750-b5d7-b70b60139bd3
+              type: twoColumn
+              slots:
+                sideA:
+                  - _id: 08e32fea-ffe5-4ae4-99cb-ff17d703bf48
+                    type: list
+                    slots:
+                      list:
+                        - _id: 4c76fdc2-d8ce-44a1-887b-8135b93e7004
+                          type: $loop
+                          slots:
+                            body:
+                              - _id: bb1b7125-73f3-41e9-b488-453296287ee8
+                                type: card
+                                variant: small
+                                parameters:
+                                  date:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Middleware Productions vids result Loop
+                                        Item/date
+                                  type:
+                                    type: select
+                                    value: video
+                                  media:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Middleware Productions vids result Loop
+                                        Item/image
+                                  title:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Middleware Productions vids result Loop
+                                        Item/title
+                                  identifier:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Middleware Productions vids result Loop
+                                        Item/videoId
+                                  description:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Middleware Productions vids result Loop
+                                        Item/description
+                          _dataResources:
+                            Middleware Productions vids result Loop Item:
+                              type: sys-reserved-loop
+                              variables:
+                                connectedData: /Middleware Productions vids/result
+                                connectedDataRequired: "false"
+                      title:
+                        - _id: 752fbad8-c114-4cad-9e97-3739234c44c1
+                          type: title
+                          variant: small
+                          parameters:
+                            text:
+                              type: text
+                              value: Middleware Productions
+                            type:
+                              type: select
+                              value: h3
+                            bottomMargin:
+                              type: checkbox
+                              value: true
+                      description:
+                        - _id: 3157ecf5-cd3e-4df9-84fe-4eb8b8aa7737
+                          type: richText
+                          parameters:
+                            label:
+                              type: text
+                              value: mp copy
+                            content:
+                              type: quill-rte
+                              value:
+                                rteValue: >-
+                                  <p>Middleware Productions is Marc and Tim, two
+                                  content creators that make unique tech event
+                                  videos.</p><p><br></p><p><span
+                                  style="background-color: transparent;">We film
+                                  interviews, shoot b-roll, create story arcs,
+                                  video-edit, sound-edit, and publish the video
+                                  on the day itself. Film in the morning, show
+                                  in the afternoon.</span></p>
+                    variant: list
+                    parameters:
+                      label:
+                        type: text
+                        value: videos
+                sideB:
+                  - _id: 51efef27-ef5a-4eff-96ef-b0bfa3a2ad12
+                    type: list
+                    slots:
+                      list:
+                        - _id: bd48447d-c913-499e-9c2b-b58c2d50605a
+                          type: $loop
+                          slots:
+                            body:
+                              - _id: 2273b2a9-e95b-4896-87b8-e823fd33e497
+                                type: card
+                                variant: small
+                                parameters:
+                                  date:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: /Blog posts result Loop Item/date
+                                  type:
+                                    type: select
+                                    value: blog
+                                  media:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: /Blog posts result Loop Item/image
+                                  title:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: /Blog posts result Loop Item/title
+                                  identifier:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: /Blog posts result Loop Item/identifier
+                                  description:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: /Blog posts result Loop Item/description
+                          _dataResources:
+                            Blog posts result Loop Item:
+                              type: sys-reserved-loop
+                              variables:
+                                connectedData: /Blog posts/result
+                                connectedDataRequired: "false"
+                      title:
+                        - _id: 703cdf76-2ec1-48dd-b7f6-c629af35ff1f
+                          type: title
+                          variant: small
+                          parameters:
+                            text:
+                              type: text
+                              value: Latest writing
+                            type:
+                              type: select
+                              value: h3
+                    variant: list
+                    parameters:
+                      label:
+                        type: text
+                        value: Blogposts
+              parameters:
+                label:
+                  type: text
+                  value: two col
+                layout:
+                  type: select
+                  value: 1-1
+        variant: fullWidth
+        parameters:
+          label:
+            type: text
+            value: MP and blogs
+          background:
+            type: text
+            value: "#091A32"
+  _dataResources:
+    Blog posts:
+      type: articlesForUser
+      variables:
+        per_page: "4"
+        collection_id: "22300"
+    Talks Content:
+      type: ctfTalks
+      variables:
+        entryIds: 3om2ogx8Go4zHDkURVux1p,1U77Sf3GxfpCcXabN0NZmf,1xf8IL104QmvxKE8Uie6ub
+    Upcoming Talks:
+      type: upcomingTalks
+      variables:
+        count: "6"
+    Upcoming Live Streams:
+      type: videosByPlaylist
+      variables:
+        id: PLkmdKA3C-iOPDSiRJAyQO-RsE3A1hhUx9
+        count: "4"
+    Middleware Productions vids:
+      type: videosByPlaylist
+      variables:
+        id: UULFtNZi1LgSHY1dzSUazplEPg
+        count: "2"
+    Latest Videos By Upload Playlist:
+      type: videosByPlaylist
+      variables: {}
+created: "2023-02-15T15:46:55.265243+00:00"
+modified: "2023-04-01T16:47:10.618026+00:00"
+pattern: false

@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: card
+name: Card
+icon: card
+parameters:
+  - id: identifier
+    name: Identifier
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: type
+    name: Type
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: video
+          value: video
+        - text: blog
+          value: blog
+        - text: talk
+          value: talk
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: description
+    name: Description
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: date
+    name: Date
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: media
+    name: Media
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: day
+    name: Day
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: month
+    name: Month
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: year
+    name: Year
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: upcoming
+    name: Upcoming
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-11T09:50:01.550634+00:00'
+updated: '2023-03-12T16:26:23.077474+00:00'
+variants:
+  - id: small
+    name: Small

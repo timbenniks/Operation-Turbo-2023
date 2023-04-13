@@ -1,0 +1,210 @@
+composition:
+  _name: Writing
+  _id: 974012a9-d4e1-4b3e-bc8f-d0ad33cb0196
+  _slug: writing
+  type: page
+  variant: noHero
+  parameters:
+    image:
+      type: cloudinary-media-selector
+      value:
+        - alt: ""
+          url: >-
+            https://res.cloudinary.com/dwfcofnrd/image/upload/v1674807798/tim-benniks-desk-setup-self-portrait-01_lkhe12.jpg
+          ratio: "16:9"
+          width: "2000"
+          format: jpg
+          height: "1129"
+          widths: "1200"
+          caption: ""
+          options: q_auto,f_auto
+          version: 1674807798
+          publicId: tim-benniks-desk-setup-self-portrait-01_lkhe12
+          createdAt: "2023-01-27T08:23:18Z"
+          previewUrl: >-
+            https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/tim-benniks-desk-setup-self-portrait-01_lkhe12.jpg
+          resourceType: image
+          transformation: ""
+          globalImageOptions: q_auto,f_auto
+    title:
+      type: text
+      value: Writing
+    description:
+      type: text
+      value: My writing
+  slots:
+    components:
+      - _id: ba9007ad-c28c-4267-8648-414d6e81a4a3
+        type: container
+        slots:
+          content:
+            - _id: 8f1e6bfc-494c-4919-a1a5-24a5dabf7964
+              type: list
+              slots:
+                list:
+                  - _id: 1a8992d5-be1f-477b-a18b-5fc6343043e3
+                    type: $loop
+                    slots:
+                      body:
+                        - _id: 0f8d1d6a-00fe-45c2-a64c-84f3f885ac20
+                          type: card
+                          parameters:
+                            date:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Articles For User Content result Loop
+                                  Item/date
+                            type:
+                              type: select
+                              value: blog
+                            media:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Articles For User Content result Loop
+                                  Item/image
+                            title:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Articles For User Content result Loop
+                                  Item/title
+                            identifier:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Articles For User Content result Loop
+                                  Item/identifier
+                            description:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: >-
+                                  /Articles For User Content result Loop
+                                  Item/description
+                    _dataResources:
+                      Articles For User Content result Loop Item:
+                        type: sys-reserved-loop
+                        variables:
+                          connectedData: /Work posts/result
+                          connectedDataRequired: "false"
+                title:
+                  - _id: ce157c96-1ed8-4e9d-8776-ef223f25683d
+                    type: title
+                    variant: large
+                    parameters:
+                      text:
+                        type: text
+                        value: Writing
+                      type:
+                        type: select
+                        value: h1
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+                  - _id: 78c10cf1-c8fa-449c-9816-0d9195618466
+                    type: title
+                    variant: small
+                    parameters:
+                      text:
+                        type: text
+                        value: Work stuff
+                      type:
+                        type: select
+                        value: h2
+              variant: grid
+              parameters:
+                label:
+                  type: text
+                  value: Workposts
+            - _id: 33c0acf7-cd29-476c-af89-0612dc3397ab
+              type: list
+              slots:
+                list:
+                  - _id: 53e70723-864b-49dc-8811-893e1b7fe9ab
+                    type: $loop
+                    slots:
+                      body:
+                        - _id: 0420fd6f-d0a2-405e-bfb9-3bce825ab880
+                          type: card
+                          parameters:
+                            type:
+                              type: select
+                              value: blog
+                            media:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Personal Posts result Loop Item/image
+                            title:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Personal Posts result Loop Item/title
+                            identifier:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Personal Posts result Loop Item/identifier
+                            description:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Personal Posts result Loop Item/description
+                    _dataResources:
+                      Personal Posts result Loop Item:
+                        type: sys-reserved-loop
+                        variables:
+                          connectedData: /Personal Posts/result
+                          connectedDataRequired: "false"
+                title:
+                  - _id: f9e1cb07-a889-4d7e-89fb-2bc934c6c7ab
+                    type: title
+                    variant: small
+                    parameters:
+                      text:
+                        type: text
+                        value: Personal blogs
+                      type:
+                        type: select
+                        value: h3
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+              variant: grid
+              parameters:
+                label:
+                  type: text
+                  value: personal blogs
+        parameters:
+          label:
+            type: text
+            value: Work posts
+  _dataResources:
+    Work posts:
+      type: articlesForUser
+      variables:
+        per_page: "50"
+        collection_id: "22300"
+    Personal Posts:
+      type: articlesForUser
+      variables:
+        per_page: "40"
+        collection_id: "22299"
+created: "2023-03-17T21:59:40.042502+00:00"
+modified: "2023-03-23T22:16:54.078673+00:00"
+pattern: false

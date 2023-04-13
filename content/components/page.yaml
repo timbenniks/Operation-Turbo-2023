@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: page
+name: Page
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: description
+    name: Description
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+      linesCount: '3'
+  - id: image
+    name: Image
+    type: cloudinary-image
+    helpText: ''
+    typeConfig:
+      defaultoptions: ''
+useTeamPermissions: true
+slots:
+  - id: components
+    name: Components
+    allowedComponents:
+      - container
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+slugSettings:
+  unique: 'no'
+  required: 'no'
+  regularExpression: ''
+  regularExpressionMessage: ''
+titleParameter: title
+canBeComposition: true
+created: '2023-01-21T16:09:36.965371+00:00'
+updated: '2023-04-01T16:46:13.35886+00:00'
+variants:
+  - id: noHero
+    name: No Hero

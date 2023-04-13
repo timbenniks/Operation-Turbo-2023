@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: list
+name: List
+icon: layout-list
+parameters:
+  - id: label
+    name: Label
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: moreSpace
+    name: More Space
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+  - id: twoItems
+    name: Two Items
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots:
+  - id: title
+    name: Title
+    allowedComponents:
+      - title
+    inheritAllowedComponents: false
+  - id: description
+    name: Description
+    allowedComponents:
+      - richText
+    inheritAllowedComponents: false
+  - id: list
+    name: List
+    allowedComponents:
+      - $loop
+      - card
+    inheritAllowedComponents: false
+titleParameter: label
+canBeComposition: false
+created: '2023-03-11T09:55:37.336524+00:00'
+updated: '2023-03-25T20:13:33.645117+00:00'
+variants:
+  - id: grid
+    name: grid
+  - id: list
+    name: list

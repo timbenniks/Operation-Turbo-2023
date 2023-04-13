@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: title
+name: Title
+icon: format-heading
+parameters:
+  - id: text
+    name: Text
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: type
+    name: Type
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: h1
+          value: h1
+        - text: h2
+          value: h2
+        - text: h3
+          value: h3
+        - text: h4
+          value: h4
+        - text: h5
+          value: h5
+        - text: h6
+          value: h6
+  - id: bottomMargin
+    name: Bottom Margin
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: text
+canBeComposition: false
+created: '2023-02-16T11:04:49.521696+00:00'
+updated: '2023-03-07T15:54:45.956289+00:00'
+variants:
+  - id: large
+    name: Large
+  - id: medium
+    name: Medium
+  - id: small
+    name: Small

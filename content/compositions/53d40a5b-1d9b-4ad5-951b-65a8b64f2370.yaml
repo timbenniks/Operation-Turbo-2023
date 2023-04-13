@@ -1,0 +1,460 @@
+composition:
+  _name: About
+  _id: 53d40a5b-1d9b-4ad5-951b-65a8b64f2370
+  _slug: about-tim
+  type: page
+  parameters:
+    image:
+      type: cloudinary-media-selector
+      value:
+        - alt: ""
+          url: >-
+            https://res.cloudinary.com/dwfcofnrd/image/upload/v1679243905/social_k2lcce.png
+          ratio: "16:9"
+          width: "1920"
+          format: png
+          height: "1080"
+          widths: "1200"
+          caption: ""
+          options: q_auto,f_auto
+          version: 1679243905
+          publicId: social_k2lcce
+          createdAt: "2023-03-19T16:38:25Z"
+          previewUrl: >-
+            https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/social_k2lcce.png
+          resourceType: image
+          transformation: ""
+          globalImageOptions: q_auto,f_auto
+    title:
+      type: text
+      value: About me
+    description:
+      type: text
+      value: >-
+        I love building fancy websites, creating content, and speaking at
+        conferences!
+  slots:
+    components:
+      - _id: cf4f7461-52ad-4022-bf61-04e3293ac6fb
+        type: container
+        slots:
+          content:
+            - _id: 89386194-dd07-44c2-9e6e-ebde93c6c276
+              type: hero
+              slots:
+                title:
+                  - _id: 0f4898de-26a8-4197-bb59-01efa72a0249
+                    type: title
+                    variant: large
+                    parameters:
+                      text:
+                        type: text
+                        value: About me
+                      type:
+                        type: select
+                        value: h1
+              parameters:
+                image:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: Tim Benniks in his farm studio, 2021
+                      url: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/v1659515179/Presskit/tim_oct_2021.jpg
+                      ratio: ""
+                      width: "6016"
+                      format: jpg
+                      height: "3384"
+                      widths: ""
+                      caption: Tim Benniks in his farm studio, 2021
+                      options: q_auto,f_auto
+                      version: 1659515179
+                      publicId: Presskit/tim_oct_2021
+                      createdAt: "2022-08-03T08:26:19Z"
+                      previewUrl: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/Presskit/tim_oct_2021.jpg
+                      resourceType: image
+                      transformation: t_TimsHero
+                      globalImageOptions: q_auto,f_auto
+                label:
+                  type: text
+                  value: Hero
+                spaceBelow:
+                  type: checkbox
+                  value: true
+                copyLocation:
+                  type: select
+                  value: left
+                textAlignment:
+                  type: select
+                  value: left
+                verticalAlignment:
+                  type: select
+                  value: bottom
+            - _id: dfe7b3e8-bfa8-455c-a063-f2fadfa7100d
+              type: twoColumn
+              slots:
+                sideA:
+                  - _id: d3c9bce1-b5cc-4265-b8ef-be79fc7cebbb
+                    type: title
+                    variant: small
+                    parameters:
+                      text:
+                        type: text
+                        value: Introduction
+                      type:
+                        type: select
+                        value: h2
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+                  - _id: 1b30e389-a25d-4762-9638-70988dc8e408
+                    type: richText
+                    variant: ""
+                    parameters:
+                      label:
+                        type: text
+                        value: about tim
+                      content:
+                        type: quill-rte
+                        value:
+                          rteValue: >-
+                            <p>My name is Tim Benniks. I'm a Dutchman living in
+                            France where I work remotely from a farm in the
+                            countryside.</p><p><br></p><p>I work at&nbsp;<a
+                            href="https://uniform.dev" rel="noopener noreferrer"
+                            target="_blank">Uniform</a>&nbsp;as Principal
+                            Developer Advocate. At Uniform we are creating
+                            innovative products that are disrupting the status
+                            quo of enterprise Digital Experience
+                            Platforms.</p><p><br></p><p>Before I joined Uniform
+                            I spend about 15 years at agencies building websites
+                            for huge brands. I was global front-end director at
+                            Valtech and Principal front-end developer at
+                            AKQA.</p><p><br></p><p>In 2020 I forged a new career
+                            path for myself by re-exploring my creativity. I’ve
+                            been a lifelong musician and since we moved
+                            countries many years ago, I didn’t play much. The
+                            agency life was resting heavy on my shoulders and I
+                            missed sharing with my community and being
+                            creative.</p><p><br></p><p>I jumped right in and
+                            decided to make a new YouTube video each week and to
+                            start speaking at conferences once a month. This
+                            creative path changed my life. I learnt a lot from
+                            the developer community and I started to make a name
+                            for myself.</p><p><br></p><p>The outcome of a year
+                            if creative work was a job at Uniform where I get to
+                            do what I love as an actual job!</p>
+                sideB:
+                  - _id: b36ba771-95db-47f1-b818-07b3d3f0d3d7
+                    type: standAloneImage
+                    parameters:
+                      image:
+                        type: cloudinary-media-selector
+                        value:
+                          - alt: ""
+                            url: >-
+                              https://res.cloudinary.com/dwfcofnrd/image/upload/v1677741328/Tim/IMG_0141.jpg
+                            ratio: ""
+                            width: "4640"
+                            format: jpg
+                            height: "6960"
+                            widths: ""
+                            caption: ""
+                            options: ""
+                            version: 1677741328
+                            publicId: Tim/IMG_0141
+                            createdAt: "2023-03-02T07:15:28Z"
+                            previewUrl: >-
+                              https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/Tim/IMG_0141.jpg
+                            resourceType: image
+                            transformation: >-
+                              c_crop,h_4640,w_4640,x_0,y_566/c_scale,h_4640,w_4640/f_auto,q_auto
+                            globalImageOptions: q_auto,f_auto
+                      title:
+                        type: text
+                        value: Tim in Berlin 2022
+              parameters:
+                label:
+                  type: text
+                  value: two col
+                layout:
+                  type: select
+                  value: 2-1
+                spaceBelow:
+                  type: checkbox
+                  value: true
+        parameters:
+          label:
+            type: text
+            value: Main group
+      - _id: f22520f9-4c70-4e16-aca7-06b35eab92b0
+        type: container
+        slots:
+          content:
+            - _id: 8d234dbe-1999-4a3c-9d0e-3e83d81a697e
+              type: twoColumn
+              slots:
+                sideA:
+                  - _id: fa134fc6-0dea-4456-afbd-5a053cbb9ed4
+                    type: standAloneImage
+                    parameters:
+                      image:
+                        type: cloudinary-media-selector
+                        value:
+                          - alt: ""
+                            url: >-
+                              https://res.cloudinary.com/dwfcofnrd/image/upload/v1674807798/tim-benniks-desk-setup-self-portrait-01_lkhe12.jpg
+                            ratio: ""
+                            width: "2000"
+                            format: jpg
+                            height: "1129"
+                            widths: ""
+                            caption: ""
+                            options: ""
+                            version: 1674807798
+                            publicId: tim-benniks-desk-setup-self-portrait-01_lkhe12
+                            createdAt: "2023-01-27T08:23:18Z"
+                            previewUrl: >-
+                              https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/tim-benniks-desk-setup-self-portrait-01_lkhe12.jpg
+                            resourceType: image
+                            transformation: ""
+                            globalImageOptions: q_auto,f_auto
+                      title:
+                        type: text
+                        value: Tim in his farm studio 2023
+                sideB:
+                  - _id: 3072ddf1-9e95-47b3-8b9a-ff48dd32d218
+                    type: title
+                    variant: small
+                    parameters:
+                      text:
+                        type: text
+                        value: Content creation
+                      type:
+                        type: select
+                        value: h3
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+                  - _id: 3eda5a8a-89d6-48a5-a6c7-f20b291d95b1
+                    type: richText
+                    variant: ""
+                    parameters:
+                      label:
+                        type: text
+                        value: Content creation
+                      content:
+                        type: quill-rte
+                        value:
+                          rteValue: >-
+                            <p>I love to explore my creativity by making videos,
+                            live streams and speaking. Now that virtual
+                            conferences are a thing I have specialised in making
+                            entertaining, high production value talks that I
+                            pre-record.</p><p><br></p><p>On my&nbsp;<a
+                            href="https://youtube.com/timbenniks" rel="noopener
+                            noreferrer" target="_blank">YouTube</a>&nbsp;channel
+                            I explore web development related topics but I also
+                            conduct interviews and I try out services with live
+                            commentary.</p><p><br></p><p>Making all these videos
+                            is lot's of work. If you like what you see, feel
+                            free to subscribe or even&nbsp;<a
+                            href="https://buymeacoff.ee/timbenniks"
+                            rel="noopener noreferrer"
+                            target="_blank">sponsor</a>&nbsp;me.</p>
+              parameters:
+                label:
+                  type: text
+                  value: two col
+                layout:
+                  type: select
+                  value: 2-1
+        variant: fullWidth
+        parameters:
+          label:
+            type: text
+            value: Devider
+          background:
+            type: text
+            value: "#091A32"
+      - _id: c7080450-7e11-4b04-80a4-8c935059107e
+        type: container
+        slots:
+          content:
+            - _id: 99340fce-8e1c-43dc-9eeb-cbb30c7a3975
+              type: twoColumn
+              slots:
+                sideA:
+                  - _id: 9a2c0001-3c02-4521-a804-a4e652d0b7a7
+                    type: list
+                    slots:
+                      list:
+                        - _id: 5fb0d021-5068-48fb-bd6a-f8394924df3c
+                          type: $loop
+                          slots:
+                            body:
+                              - _id: e3ede133-d1c9-4fe8-b321-7f539ee24c78
+                                type: card
+                                variant: small
+                                parameters:
+                                  type:
+                                    type: select
+                                    value: video
+                                  media:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Videos By Playlist Content result Loop
+                                        Item/image
+                                  title:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Videos By Playlist Content result Loop
+                                        Item/title
+                                  identifier:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Videos By Playlist Content result Loop
+                                        Item/videoId
+                                  description:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Videos By Playlist Content result Loop
+                                        Item/description
+                          _dataResources:
+                            Videos By Playlist Content result Loop Item:
+                              type: sys-reserved-loop
+                              variables:
+                                connectedData: /Videos By Playlist Content/result
+                                connectedDataRequired: "false"
+                      title:
+                        - _id: 02c46a45-f8a2-4af4-af4d-254202185933
+                          type: title
+                          variant: small
+                          parameters:
+                            text:
+                              type: text
+                              value: Latest videos
+                            type:
+                              type: select
+                              value: h3
+                    variant: list
+                    parameters:
+                      label:
+                        type: text
+                        value: Latest vids
+                sideB:
+                  - _id: 65394eb8-e2ed-498b-b458-8fdd06208dbb
+                    type: list
+                    slots:
+                      list:
+                        - _id: 411a9304-2f66-43d4-8909-9befdc173131
+                          type: $loop
+                          slots:
+                            body:
+                              - _id: 23cdc525-084c-41b4-931c-76f97f5ac9b3
+                                type: card
+                                variant: small
+                                parameters:
+                                  day:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Upcoming Talks Content result Loop
+                                        Item/date/day
+                                  type:
+                                    type: select
+                                    value: talk
+                                  year:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Upcoming Talks Content result Loop
+                                        Item/date/year
+                                  month:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Upcoming Talks Content result Loop
+                                        Item/date/month
+                                  title:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Upcoming Talks Content result Loop
+                                        Item/conference
+                                  upcoming:
+                                    type: checkbox
+                                    value: true
+                                  identifier:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Upcoming Talks Content result Loop
+                                        Item/link
+                                  description:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Upcoming Talks Content result Loop
+                                        Item/talk
+                          _dataResources:
+                            Upcoming Talks Content result Loop Item:
+                              type: sys-reserved-loop
+                              variables:
+                                connectedData: /Upcoming Talks Content/result
+                                connectedDataRequired: "false"
+                      title:
+                        - _id: c2199441-e031-4335-a3a3-2182252c4f47
+                          type: title
+                          variant: small
+                          parameters:
+                            text:
+                              type: text
+                              value: Upcoming talks
+                            type:
+                              type: select
+                              value: h3
+                    variant: list
+                    parameters:
+                      label:
+                        type: text
+                        value: upcoming talks
+        parameters:
+          label:
+            type: text
+            value: Latest stuff
+  _dataResources:
+    Upcoming Talks Content:
+      type: upcomingTalks
+      variables:
+        count: "4"
+    Videos By Playlist Content:
+      type: videosByPlaylist
+      variables: {}
+created: "2023-02-15T16:53:56.921237+00:00"
+modified: "2023-03-19T16:38:52.136794+00:00"
+pattern: false

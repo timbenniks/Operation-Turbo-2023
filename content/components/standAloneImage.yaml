@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: standAloneImage
+name: Stand Alone Image
+icon: image
+parameters:
+  - id: image
+    name: Image
+    type: cloudinary-media-selector
+    helpText: ''
+    typeConfig:
+      ratio: ''
+      widths: ''
+      multiSelect: false
+      defaultoptions: ''
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: spaceBelow
+    name: Space Below
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-17T19:50:31.126316+00:00'
+updated: '2023-03-25T19:53:59.273364+00:00'

@@ -1,0 +1,523 @@
+composition:
+  _name: Alive and Kicking
+  _id: 25434785-4ab5-4ac7-9a9d-fbf0d4a67d24
+  _slug: alive-and-kicking
+  type: page
+  parameters:
+    image:
+      type: cloudinary-media-selector
+      value:
+        - alt: ""
+          url: >-
+            https://res.cloudinary.com/dwfcofnrd/image/upload/v1677741136/Tim/332051017_2552795964930421_7872527921593081497_n.jpg
+          ratio: "16:9"
+          width: "2048"
+          format: jpg
+          height: "1365"
+          widths: "1200"
+          caption: ""
+          options: q_auto,f_auto
+          version: 1677741136
+          publicId: Tim/332051017_2552795964930421_7872527921593081497_n
+          createdAt: "2023-03-02T07:12:16Z"
+          previewUrl: >-
+            https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/Tim/332051017_2552795964930421_7872527921593081497_n.jpg
+          resourceType: image
+          transformation: ""
+          globalImageOptions: q_auto,f_auto
+    title:
+      type: text
+      value: Alive and Kicking - A Vue into rock & roll
+    description:
+      type: text
+      value: >-
+        This is the Vue guitar Karaoke talk. The audience can vote for a song to
+        be played live on stage. The whole experience is done in the browser and
+        uses Vue and Nuxt.
+  slots:
+    components:
+      - _id: fd4f880a-fee1-44fc-a683-c95d7bec76ac
+        type: container
+        slots:
+          content:
+            - _id: c8d4f57c-4cd0-487f-a2a6-b4fae63cdce0
+              type: hero
+              slots:
+                title:
+                  - _id: a1ea73ed-288b-41b4-b16c-aba5c1bdee91
+                    type: title
+                    variant: large
+                    parameters:
+                      text:
+                        type: text
+                        value: Alive and Kicking
+                      type:
+                        type: select
+                        value: h1
+                  - _id: ab1ad00c-5add-49fc-90ff-8317e3aa0fe7
+                    type: title
+                    variant: small
+                    parameters:
+                      text:
+                        type: text
+                        value: A Vue into rock & roll
+                      type:
+                        type: select
+                        value: h2
+              parameters:
+                image:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ""
+                      url: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/v1677741405/Alive%20and%20Kicking/332007084_1174595923212883_7225725888814553172_n.jpg
+                      ratio: ""
+                      width: "2048"
+                      format: jpg
+                      height: "1365"
+                      widths: ""
+                      caption: ""
+                      options: q_auto,f_auto
+                      version: 1677741405
+                      publicId: >-
+                        Alive and
+                        Kicking/332007084_1174595923212883_7225725888814553172_n
+                      createdAt: "2023-03-02T07:16:45Z"
+                      previewUrl: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/Alive%20and%20Kicking/332007084_1174595923212883_7225725888814553172_n.jpg
+                      resourceType: image
+                      transformation: t_TimsHero
+                      globalImageOptions: q_auto,f_auto
+                label:
+                  type: text
+                  value: hero
+                spaceBelow:
+                  type: checkbox
+                  value: true
+                copyLocation:
+                  type: select
+                  value: left
+                textAlignment:
+                  type: select
+                  value: left
+                verticalAlignment:
+                  type: select
+                  value: bottom
+            - _id: 9d153d94-a82e-4af4-8f9a-e3bd4ec8a7c4
+              type: twoColumn
+              slots:
+                sideA:
+                  - _id: 2d1adab5-dd4b-4431-ac6f-ef3fcc01ccf9
+                    type: title
+                    variant: small
+                    parameters:
+                      text:
+                        type: text
+                        value: Rock & Roll in the browser
+                      type:
+                        type: select
+                        value: h3
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+                  - _id: bb8c4eb5-bd2d-44e9-a804-f9663e616ce4
+                    type: richText
+                    variant: ""
+                    parameters:
+                      label:
+                        type: text
+                        value: About the talk
+                      content:
+                        type: quill-rte
+                        value:
+                          rteValue: >-
+                            <p>Get ready to rock out at your next tech
+                            conference! I've created an electrifying
+                            browser-based karaoke experience tailored explicitly
+                            for rock &amp; roll guitar. Using the innovative
+                            power of Vue, Nuxt, and webmidi, everything from the
+                            backing tracks to the guitar amp presets is
+                            dynamically controlled. </p><p><br></p><p>And the
+                            best part? You, the audience, get to participate
+                            too! By logging in with Twitter or Github, you can
+                            live-vote what songs I should play next, making this
+                            a fully interactive and unforgettable
+                            experience.</p>
+                sideB:
+                  - _id: 3147cc6c-7069-40ef-8859-b398587ea872
+                    type: standAloneImage
+                    parameters:
+                      image:
+                        type: cloudinary-media-selector
+                        value:
+                          - alt: ""
+                            url: >-
+                              https://res.cloudinary.com/dwfcofnrd/image/upload/v1677741406/Alive%20and%20Kicking/332092387_875514316895628_6446709527971380543_n.jpg
+                            ratio: ""
+                            width: "2048"
+                            format: jpg
+                            height: "1365"
+                            widths: ""
+                            caption: ""
+                            options: ""
+                            version: 1677741406
+                            publicId: >-
+                              Alive and
+                              Kicking/332092387_875514316895628_6446709527971380543_n
+                            createdAt: "2023-03-02T07:16:46Z"
+                            previewUrl: >-
+                              https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/Alive%20and%20Kicking/332092387_875514316895628_6446709527971380543_n.jpg
+                            resourceType: image
+                            transformation: >-
+                              c_crop,h_1365,w_1820,x_228,y_0/c_scale,h_1365,w_1820/f_auto,q_auto
+                            globalImageOptions: q_auto,f_auto
+                      title:
+                        type: text
+                        value: Tim at Vue Amsterdam 2023
+                      spaceBelow:
+                        type: checkbox
+                        value: true
+              parameters:
+                layout:
+                  type: select
+                  value: 2-1
+        parameters:
+          label:
+            type: text
+            value: main container
+      - _id: 89fcb4f2-7a6f-40a9-9eb1-fea3c2d86ef0
+        type: container
+        slots:
+          content:
+            - _id: b67d9380-2e1a-4cac-90d8-84d22b363016
+              type: list
+              slots:
+                list:
+                  - _id: b12187bc-98fa-4658-b3d0-c97d73c4b25c
+                    type: card
+                    parameters:
+                      type:
+                        type: select
+                        value: video
+                      media:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /Story behind/result/0/image
+                      title:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /Story behind/result/0/title
+                      identifier:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /Story behind/result/0/videoId
+                      description:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /Story behind/result/0/description
+                  - _id: fcb15f25-7d8a-4067-90c0-658a43902e71
+                    type: card
+                    parameters:
+                      type:
+                        type: select
+                        value: video
+                      media:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /How it was made/result/0/image
+                      title:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /How it was made/result/0/title
+                      identifier:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /How it was made/result/0/videoId
+                      description:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /How it was made/result/0/description
+                  - _id: e82b59dd-fba0-413b-ae57-3558821fe105
+                    type: card
+                    parameters:
+                      date:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /the conf talk/result/0/date
+                      type:
+                        type: select
+                        value: video
+                      media:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /the conf talk/result/0/image
+                      title:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /the conf talk/result/0/title
+                      identifier:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /the conf talk/result/0/videoId
+                      description:
+                        type: text
+                        value: unresolved
+                        connectedData:
+                          syntax: jptr
+                          pointer: /the conf talk/result/0/description
+                title:
+                  - _id: 26dd1f5c-dd57-4830-8a3c-e196b399c7a5
+                    type: title
+                    variant: small
+                    parameters:
+                      text:
+                        type: text
+                        value: The story behind Alive and kicking
+                      type:
+                        type: select
+                        value: h3
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+              variant: grid
+        variant: fullWidth
+        parameters:
+          label:
+            type: text
+            value: full width
+          background:
+            type: text
+            value: "#091A32"
+      - _id: cf2b6030-0e3a-440f-8fe7-af0c5fccb73c
+        type: container
+        slots:
+          content:
+            - _id: 8fb6b3ac-f6fc-4789-903f-19ae18c79350
+              type: twoColumn
+              slots:
+                sideA:
+                  - _id: 21f2caff-6384-4113-96c3-73345de09434
+                    type: title
+                    variant: small
+                    parameters:
+                      text:
+                        type: text
+                        value: Share your vote
+                      type:
+                        type: select
+                        value: h2
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+                  - _id: 69edfa76-ecbf-469c-9cfc-919aebafe4bf
+                    type: standAloneImage
+                    parameters:
+                      image:
+                        type: cloudinary-media-selector
+                        value:
+                          - alt: ""
+                            url: >-
+                              https://res.cloudinary.com/dwfcofnrd/image/upload/v1679773526/6_porezd.avif
+                            ratio: ""
+                            width: "1920"
+                            format: avif
+                            height: "1080"
+                            widths: ""
+                            caption: ""
+                            options: ""
+                            version: 1679773526
+                            publicId: 6_porezd
+                            createdAt: "2023-03-25T19:45:26Z"
+                            previewUrl: >-
+                              https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/6_porezd.avif
+                            resourceType: image
+                            transformation: ""
+                            globalImageOptions: q_auto,f_auto
+                      title:
+                        type: text
+                        value: Share your vote
+                      spaceBelow:
+                        type: checkbox
+                        value: true
+                  - _id: df270341-7446-4150-9d11-2c01e47df5d9
+                    type: richText
+                    variant: ""
+                    parameters:
+                      label:
+                        type: text
+                        value: About the talk
+                      content:
+                        type: quill-rte
+                        value:
+                          rteValue: >-
+                            <p>You, the audience, get to participate too! By
+                            logging in with your Twitter or Github account, you
+                            can live-vote what songs I should play next during
+                            my guitar karaoke performance.</p><p><br></p><p>But
+                            that's not all - every vote you cast will be
+                            displayed on the big screen as a bouncing ball,
+                            making you a part of the talk. You vote, I play -
+                            let's make this a night to
+                            remember!</p><p><br></p><p>After voting for your
+                            favorite song, you can share a personalized image of
+                            the song and your profile picture on your social
+                            media accounts.</p>
+                sideB:
+                  - _id: 2e34d0aa-e4df-47ea-87bf-e2ad15451eb7
+                    type: list
+                    slots:
+                      list:
+                        - _id: c01c9fa4-50d0-4f07-93b7-ab6c558f8d5c
+                          type: $loop
+                          slots:
+                            body:
+                              - _id: cbeb0a3d-bd59-4ef0-b8c1-020c9a5ed878
+                                type: card
+                                variant: small
+                                parameters:
+                                  date:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Talks Content items Loop
+                                        Item/fields/date
+                                  type:
+                                    type: select
+                                    value: talk
+                                  title:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Talks Content items Loop
+                                        Item/fields/conference
+                                  identifier:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Talks Content items Loop
+                                        Item/fields/link
+                                  description:
+                                    type: text
+                                    value: unresolved
+                                    connectedData:
+                                      syntax: jptr
+                                      pointer: >-
+                                        /Talks Content items Loop
+                                        Item/fields/talk
+                          _dataResources:
+                            Talks Content items Loop Item:
+                              type: sys-reserved-loop
+                              variables:
+                                connectedData: /Talks Content/items
+                                connectedDataRequired: "false"
+                      title:
+                        - _id: 1fda38c8-a35b-4c3e-aa7a-de10c11f514c
+                          type: title
+                          variant: small
+                          parameters:
+                            text:
+                              type: text
+                              value: Alive and kicking on tour
+                            type:
+                              type: select
+                              value: h2
+                            bottomMargin:
+                              type: checkbox
+                              value: true
+                    variant: list
+              parameters:
+                layout:
+                  type: select
+                  value: 2-1
+        parameters:
+          label:
+            type: text
+            value: talks
+      - _id: 37ad5952-d74d-42c8-b97a-7dbbc48dce0e
+        type: container
+        slots:
+          content:
+            - _id: 40e4c8c0-851c-4ab0-b1a7-9891d910129d
+              type: standAloneImage
+              parameters:
+                image:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ""
+                      url: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/v1677741584/Alive%20and%20Kicking/FogxYf8WYAEskHR.jpg
+                      ratio: ""
+                      width: "2048"
+                      format: jpg
+                      height: "1536"
+                      widths: ""
+                      caption: ""
+                      options: ""
+                      version: 1677741584
+                      publicId: Alive and Kicking/FogxYf8WYAEskHR
+                      createdAt: "2023-03-02T07:19:44Z"
+                      previewUrl: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/Alive%20and%20Kicking/FogxYf8WYAEskHR.jpg
+                      resourceType: image
+                      transformation: >-
+                        c_crop,h_1152,w_2048,x_0,y_161/c_scale,h_1152,w_2048/f_auto,q_auto
+                      globalImageOptions: q_auto,f_auto
+        variant: fullWidth
+        parameters:
+          label:
+            type: text
+            value: image
+          background:
+            type: text
+            value: "#091A32"
+  _dataResources:
+    Story behind:
+      type: videoById
+      variables:
+        id: hhPiTREYobI
+    Talks Content:
+      type: ctfTalks
+      variables:
+        entryIds: >-
+          5Lca8iW5C7pUBKU41HMiAt,7ARW0bsjBdi1KMoyOWFMhE,1xf8IL104QmvxKE8Uie6ub,3XUQ6rY2GLwwRu7lCL2kDr,3tpHkpGL6LWNoKqN1D0iVp
+    the conf talk:
+      type: videoById
+      variables:
+        id: "-4m4TIJ0z20"
+    How it was made:
+      type: videoById
+      variables:
+        id: M0MrLIGs6I0
+created: "2023-03-25T15:21:20.43749+00:00"
+modified: "2023-03-25T20:43:18.086522+00:00"
+pattern: false

@@ -1,0 +1,317 @@
+composition:
+  _name: Livestreams
+  _id: e8436ee7-c64e-48fc-97a0-779856721de5
+  _slug: /livestreams
+  type: page
+  parameters:
+    image:
+      type: cloudinary-media-selector
+      value:
+        - alt: ""
+          url: >-
+            https://res.cloudinary.com/dwfcofnrd/image/upload/v1677741298/Tim/Tim_August_2022.png
+          ratio: "16:9"
+          width: "5120"
+          format: png
+          height: "2880"
+          widths: "1200"
+          caption: ""
+          options: q_auto,f_auto
+          version: 1677741298
+          publicId: Tim/Tim_August_2022
+          createdAt: "2023-03-02T07:14:58Z"
+          previewUrl: >-
+            https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/Tim/Tim_August_2022.png
+          resourceType: image
+          transformation: ""
+          globalImageOptions: q_auto,f_auto
+    title:
+      type: text
+      value: Live Streams
+    description:
+      type: text
+      value: Live Streams
+  slots:
+    components:
+      - _id: 653e34ad-5a67-4050-8b28-2cfc42697598
+        type: container
+        slots:
+          content:
+            - _id: cf797a31-4f4a-4b28-bf6e-bbaa606cb00d
+              type: hero
+              slots:
+                title:
+                  - _id: 2e0df4e9-9b8f-4142-ac42-ed3dd3dc4643
+                    type: title
+                    variant: large
+                    parameters:
+                      text:
+                        type: text
+                        value: Live streams
+                      type:
+                        type: select
+                        value: h1
+              parameters:
+                image:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ""
+                      url: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/v1674807798/tim-benniks-desk-setup-self-portrait-01_lkhe12.jpg
+                      ratio: ""
+                      width: "2000"
+                      format: jpg
+                      height: "1129"
+                      widths: ""
+                      caption: ""
+                      options: q_auto,f_auto
+                      version: 1674807798
+                      publicId: tim-benniks-desk-setup-self-portrait-01_lkhe12
+                      createdAt: "2023-01-27T08:23:18Z"
+                      previewUrl: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/tim-benniks-desk-setup-self-portrait-01_lkhe12.jpg
+                      resourceType: image
+                      transformation: t_TimsHero
+                      globalImageOptions: q_auto,f_auto
+                label:
+                  type: text
+                  value: hero
+                spaceBelow:
+                  type: checkbox
+                  value: true
+                copyLocation:
+                  type: select
+                  value: left
+                textAlignment:
+                  type: select
+                  value: left
+                verticalAlignment:
+                  type: select
+                  value: bottom
+        parameters:
+          label:
+            type: text
+            value: Main container
+      - _id: db3bf515-2c9e-4b96-b695-621f5ba02d87
+        type: container
+        slots:
+          content:
+            - _id: eb5e1674-c8ca-4876-82f1-ce88dc113b32
+              type: list
+              slots:
+                list:
+                  - _id: 28d7c990-574e-47a1-9e5e-d3d6fd9bb958
+                    type: $loop
+                    slots:
+                      body:
+                        - _id: e0a6c884-c63b-4af4-8fa9-eb0088e96622
+                          type: card
+                          parameters:
+                            type:
+                              type: select
+                              value: video
+                            media:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /UPS result Loop Item/image
+                            title:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /UPS result Loop Item/title
+                            identifier:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /UPS result Loop Item/videoId
+                    _dataResources:
+                      UPS result Loop Item:
+                        type: sys-reserved-loop
+                        variables:
+                          connectedData: /UPS/result
+                          connectedDataRequired: "false"
+                title:
+                  - _id: 69d91bcb-6b85-4504-865f-ee03c95eef5f
+                    type: title
+                    variant: medium
+                    parameters:
+                      text:
+                        type: text
+                        value: Unpack The Stack
+                      type:
+                        type: select
+                        value: h2
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+                description:
+                  - _id: 5d3bda78-26ab-483f-86c3-abb8c07ae1bd
+                    type: richText
+                    parameters:
+                      content:
+                        type: quill-rte
+                        value:
+                          rteValue: >-
+                            <p>In these live streams we unpack a stack. As in, a
+                            technical person explains how they built something
+                            or we talk about something technical that excites
+                            them.</p>
+        variant: fullWidth
+        parameters:
+          background:
+            type: text
+            value: "#091A32"
+      - _id: 123a6505-988a-4509-9f71-656552413f6d
+        type: container
+        slots:
+          content:
+            - _id: 20e5e4ce-585e-4a1f-a024-86ae841a315f
+              type: list
+              slots:
+                list:
+                  - _id: 7b796b60-210b-41c2-bc7e-ee3a2591dd92
+                    type: $loop
+                    slots:
+                      body:
+                        - _id: 6f9673b2-fee9-4e3f-814b-ea55f8b420b3
+                          type: card
+                          parameters:
+                            type:
+                              type: select
+                              value: video
+                            media:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /CWC result Loop Item/image
+                            title:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /CWC result Loop Item/title
+                            identifier:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /CWC result Loop Item/videoId
+                    _dataResources:
+                      CWC result Loop Item:
+                        type: sys-reserved-loop
+                        variables:
+                          connectedData: /CWC/result
+                          connectedDataRequired: "false"
+                title:
+                  - _id: faa149ab-aa7c-444b-a35d-ffce9f42dbb3
+                    type: title
+                    variant: medium
+                    parameters:
+                      text:
+                        type: text
+                        value: Composable Without Compromise
+                      type:
+                        type: select
+                        value: h2
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+                description:
+                  - _id: fe357eef-e5e3-418f-84ea-bed606f55b3e
+                    type: richText
+                    parameters:
+                      content:
+                        type: quill-rte
+                        value:
+                          rteValue: >-
+                            <p>Composable without compromise is for industry
+                            folks who want to learn about composable
+                            architectures and the ideas behind the why and how
+                            of composable. During the stream we ask industry
+                            veterans six essential questions that help us define
+                            composable architectures.</p>
+      - _id: 93735dbe-5b8e-470d-9e68-74345ca85957
+        type: container
+        slots:
+          content:
+            - _id: 4bd72df1-4f0a-4c23-8713-98ffb4841d92
+              type: list
+              slots:
+                list:
+                  - _id: 860af348-2a2c-48c5-bb25-af06bbb8255a
+                    type: $loop
+                    slots:
+                      body:
+                        - _id: f52bf86a-f7e4-4590-bbea-97b4689fd4c5
+                          type: card
+                          parameters:
+                            type:
+                              type: select
+                              value: video
+                            media:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /misc result Loop Item/image
+                            title:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /misc result Loop Item/title
+                            identifier:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /misc result Loop Item/videoId
+                    _dataResources:
+                      misc result Loop Item:
+                        type: sys-reserved-loop
+                        variables:
+                          connectedData: /misc/result
+                          connectedDataRequired: "false"
+                title:
+                  - _id: 901f5592-5600-4a0d-b07a-e3b955de916d
+                    type: title
+                    variant: medium
+                    parameters:
+                      text:
+                        type: text
+                        value: Other live streams
+                      type:
+                        type: select
+                        value: h3
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+        variant: fullWidth
+        parameters:
+          background:
+            type: text
+            value: "#091A32"
+  _dataResources:
+    CWC:
+      type: videosByPlaylist
+      variables:
+        id: PLkmdKA3C-iOM5taAQBkkVAT5gNYncvM8d
+        count: "20"
+    UPS:
+      type: videosByPlaylist
+      variables:
+        id: PLkmdKA3C-iOOvftzsLWsfTy6X7MoteT5e
+        count: "20"
+    misc:
+      type: videosByPlaylist
+      variables:
+        id: PLcoeeDyxakhVM-xWfqWZ6TFpqC1Aw5__N
+        count: "20"
+created: "2023-03-19T15:53:51.468555+00:00"
+modified: "2023-03-24T19:11:31.509458+00:00"
+pattern: false

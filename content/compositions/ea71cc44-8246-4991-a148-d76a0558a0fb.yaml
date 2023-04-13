@@ -1,0 +1,320 @@
+composition:
+  _name: Speaking
+  _id: ea71cc44-8246-4991-a148-d76a0558a0fb
+  _slug: speaking
+  type: page
+  parameters:
+    image:
+      type: cloudinary-media-selector
+      value:
+        - alt: Tim Benniks in Amsterdam 2019
+          url: >-
+            https://res.cloudinary.com/dwfcofnrd/image/upload/v1659294037/Presskit/FDLC2019_462.jpg
+          ratio: "16:9"
+          width: "4556"
+          format: jpg
+          height: "2550"
+          widths: "1200"
+          caption: Tim Benniks in Amsterdam 2019
+          options: q_auto,f_auto
+          version: 1659294037
+          publicId: Presskit/FDLC2019_462
+          createdAt: "2022-07-31T18:59:14Z"
+          previewUrl: >-
+            https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/Presskit/FDLC2019_462.jpg
+          resourceType: image
+          transformation: ""
+          globalImageOptions: q_auto,f_auto
+    title:
+      type: text
+      value: Speaking
+    description:
+      type: text
+      value: >-
+        I love speaking at conferences all around the world. This page lists all
+        upcoming and older talks I've done.
+  slots:
+    components:
+      - _id: e17c1125-f797-411a-9047-7c1b134a108a
+        type: container
+        slots:
+          content:
+            - _id: a4d7c2b5-9672-4401-ac18-7d6865a9b788
+              type: hero
+              slots:
+                title:
+                  - _id: f2a324a2-1626-4a3d-9533-815871d723e1
+                    type: title
+                    variant: large
+                    parameters:
+                      text:
+                        type: text
+                        value: Speaking
+                      type:
+                        type: select
+                        value: h1
+              parameters:
+                image:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ""
+                      url: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/v1678201097/Tim/332075648_612625367366483_8782581467389950642_n.jpg
+                      ratio: ""
+                      width: "2048"
+                      format: jpg
+                      height: "1011"
+                      widths: ""
+                      caption: ""
+                      options: q_auto,f_auto
+                      version: 1678201097
+                      publicId: Tim/332075648_612625367366483_8782581467389950642_n
+                      createdAt: "2023-03-02T07:12:16Z"
+                      previewUrl: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/Tim/332075648_612625367366483_8782581467389950642_n.jpg
+                      resourceType: image
+                      transformation: t_TimsHero
+                      globalImageOptions: q_auto,f_auto
+                label:
+                  type: text
+                  value: Speaking hero
+                spaceBelow:
+                  type: checkbox
+                  value: true
+                copyLocation:
+                  type: select
+                  value: left
+                textAlignment:
+                  type: select
+                  value: left
+                verticalAlignment:
+                  type: select
+                  value: bottom
+        parameters:
+          label:
+            type: text
+            value: main container
+      - _id: 750c4c81-519f-42c0-b53f-7b72f894f6c2
+        type: container
+        slots:
+          content:
+            - _id: d3f76f13-d49a-4dee-bee3-57c3dd1f5a00
+              type: twoColumn
+              slots:
+                sideA:
+                  - _id: 578bc613-7897-4e20-afef-e59ea168e0d9
+                    type: title
+                    variant: medium
+                    parameters:
+                      text:
+                        type: text
+                        value: Press kit
+                      type:
+                        type: select
+                        value: h2
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+                  - _id: ce0ed54c-d7f4-4796-94d9-35b09a8d6f87
+                    type: richText
+                    parameters:
+                      label:
+                        type: text
+                        value: press kit text
+                      content:
+                        type: quill-rte
+                        value:
+                          rteValue: >-
+                            <p>Looking for my bio, talk information or pictures?
+                            Go to the&nbsp;<a href="/presskit" rel="noopener
+                            noreferrer" target="_blank">presskit</a>&nbsp;page
+                            to find different varieties of my bio, headshots and
+                            past talks I have done. This page also includes
+                            slides and other info needed to add me as a speaker
+                            to your conference.</p>
+                sideB:
+                  - _id: 5a5590f0-f153-4a73-866a-6b60bc9f4246
+                    type: title
+                    variant: medium
+                    parameters:
+                      text:
+                        type: text
+                        value: EMCEE
+                      type:
+                        type: select
+                        value: h3
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+                  - _id: 44e7cd4d-e96b-475c-a37e-4d55869e5ae8
+                    type: richText
+                    parameters:
+                      label:
+                        type: text
+                        value: emcee text
+                      content:
+                        type: quill-rte
+                        value:
+                          rteValue: >-
+                            <p>Masters of ceremonies, commonly called emcees,
+                            offer a profound value at conferences. As a seasoned
+                            emcee, I usually start with an anecdote as
+                            introduction, followed by an in-depth Q&amp;A
+                            session that truly features the speakers and their
+                            content. Over the past few years, my emcee gigs have
+                            been largely virtual. Starting 2022, however, I've
+                            also acted as emcee at in-person conferences, such
+                            as Vuejs Amsterdam.</p>
+              parameters:
+                label:
+                  type: text
+                  value: two column
+                layout:
+                  type: select
+                  value: 1-1
+                spaceBelow:
+                  type: checkbox
+                  value: true
+        parameters:
+          label:
+            type: text
+            value: wrap
+      - _id: 79c0355f-d5d1-49f4-bd71-e8a7d848e8e1
+        type: container
+        slots:
+          content:
+            - _id: 11a5e58c-dec2-4cb8-a4dc-47480c06528a
+              type: standAloneImage
+              parameters:
+                image:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ""
+                      url: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/v1677741163/Tim/332085412_586030710041652_2407035883321360255_n.jpg
+                      ratio: ""
+                      width: "2048"
+                      format: jpg
+                      height: "1365"
+                      widths: ""
+                      caption: ""
+                      options: ""
+                      version: 1677741163
+                      publicId: Tim/332085412_586030710041652_2407035883321360255_n
+                      createdAt: "2023-03-02T07:12:43Z"
+                      previewUrl: >-
+                        https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto:low,f_auto,w_150/Tim/332085412_586030710041652_2407035883321360255_n.jpg
+                      resourceType: image
+                      transformation: t_TimsHero
+                      globalImageOptions: q_auto,f_auto
+                title:
+                  type: text
+                  value: Tim at Vue.js Amsterdam in 2023
+        variant: fullWidth
+        parameters:
+          label:
+            type: text
+            value: wrap
+          background:
+            type: text
+            value: "#091A32"
+      - _id: e952c4cd-36e5-4941-acee-a3c0129705e9
+        type: container
+        slots:
+          content:
+            - _id: 12c48dfd-f493-4afb-a75a-48bce58d7fa4
+              type: list
+              slots:
+                list:
+                  - _id: 459f958d-f29e-4d71-a0a2-df5fdf715368
+                    type: $loop
+                    slots:
+                      body:
+                        - _id: 99e52927-e570-404a-ab8a-8524638b4e26
+                          type: card
+                          parameters:
+                            day:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Talks Content result Loop Item/date/day
+                            type:
+                              type: select
+                              value: talk
+                            year:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Talks Content result Loop Item/date/year
+                            month:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Talks Content result Loop Item/date/month
+                            title:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Talks Content result Loop Item/conference
+                            upcoming:
+                              type: checkbox
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Talks Content result Loop Item/date/upcoming
+                            identifier:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Talks Content result Loop Item/link
+                            description:
+                              type: text
+                              value: unresolved
+                              connectedData:
+                                syntax: jptr
+                                pointer: /Talks Content result Loop Item/talk
+                    _dataResources:
+                      Talks Content result Loop Item:
+                        type: sys-reserved-loop
+                        variables:
+                          connectedData: /Talks Content/result
+                          connectedDataRequired: "false"
+                title:
+                  - _id: 87858efa-3f16-42a7-bdbf-9ba12dddcc38
+                    type: title
+                    variant: medium
+                    parameters:
+                      text:
+                        type: text
+                        value: Talks
+                      type:
+                        type: select
+                        value: h3
+                      bottomMargin:
+                        type: checkbox
+                        value: true
+              variant: ""
+              parameters:
+                label:
+                  type: text
+                  value: Talk list
+                moreSpace:
+                  type: checkbox
+                  value: true
+        parameters:
+          label:
+            type: text
+            value: talks
+  _dataResources:
+    Talks Content:
+      type: talks
+      variables:
+        count: "101"
+created: "2023-03-11T18:30:54.931152+00:00"
+modified: "2023-03-24T19:04:16.764169+00:00"
+pattern: false

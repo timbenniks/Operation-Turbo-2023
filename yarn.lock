@@ -1283,23 +1283,6 @@
     yargs "^17.6.2"
     zod "3.21.4"
 
-"@uniformdev/context-edge-vercel@^18.34.0":
-  version "18.34.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context-edge-vercel/-/context-edge-vercel-18.34.0.tgz#0f464e7cf30f922bd74f2ed8228858a456256b6d"
-  integrity sha512-xcffONgtsKx9nCQf9ukaB3iW9TQilXPZCXftiDaV6Fwc+4hR1YOIOkbsfh+Vk1gke4UDisWFgAnA/QOkAda3hA==
-  dependencies:
-    "@uniformdev/context" "18.34.0"
-    "@uniformdev/context-edge" "18.34.0"
-    cookie "^0.5.0"
-
-"@uniformdev/context-edge@18.34.0":
-  version "18.34.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context-edge/-/context-edge-18.34.0.tgz#08bc86050ff156c2764193724a0c2643c3418837"
-  integrity sha512-PLgjn3PcM3gwLVw49uLamLXTS/z6W2y+tmQnGlOl9xsiI+xwmE2XnQP0hD3lX6Kg1chDKca3cOE7mSR5ZihWSQ==
-  dependencies:
-    "@uniformdev/context" "18.34.0"
-    cookie "^0.5.0"
-
 "@uniformdev/context-next@^18.34.0":
   version "18.34.0"
   resolved "https://registry.yarnpkg.com/@uniformdev/context-next/-/context-next-18.34.0.tgz#32fee2b1e8035ff9b5fa9ed9745d08948f9ef1ad"

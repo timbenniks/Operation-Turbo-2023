@@ -35,8 +35,8 @@ const Card: React.FC<CardProps> = ({
 }: CardProps) => {
   const img = (
     <CldImage
-      width={480}
-      height={270}
+      width={720}
+      height={405}
       alt={title}
       loading="lazy"
       src={media}

@@ -1,10 +1,9 @@
 import { UniformContext } from "@uniformdev/context-react";
 import { UniformAppProps } from "@uniformdev/context-next";
 import createUniformContext from "lib/uniform/uniformContext";
-
+import { Analytics } from "@vercel/analytics/react";
 import "../styles/globals.css";
 import { Lato } from "@next/font/google";
-import PlausibleProvider from "next-plausible";
 
 const dmsans = Lato({
   weight: ["400", "700"],
@@ -25,11 +24,11 @@ function MyApp({
       //outputType={typeof window === "undefined" ? "edge" : "standard"}
       outputType={"standard"}
     >
-      <PlausibleProvider domain="timbenniks.dev">
-        <div className={`${dmsans.variable} font-sans`}>
-          <Component {...pageProps} />
-        </div>
-      </PlausibleProvider>
+      <div className={`${dmsans.variable} font-sans`}>
+        <Component {...pageProps} />
+      </div>
+
+      <Analytics />
     </UniformContext>
   );
 }

@@ -9,9 +9,6 @@ import runEnhancers from "lib/uniform/enhancers";
 export const getStaticProps = withUniformGetStaticProps({
   param: "slug",
   preview: process.env.NODE_ENV === "development",
-  requestOptions: {
-    unstable_resolveData: true,
-  },
   callback: async (context, composition) => {
     if (composition) {
       await runEnhancers(composition);

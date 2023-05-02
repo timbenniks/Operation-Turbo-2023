@@ -21,7 +21,6 @@ function MyApp({
   return (
     <UniformContext
       context={serverUniformContext ?? clientContext}
-      //outputType={typeof window === "undefined" ? "edge" : "standard"}
       outputType={"standard"}
     >
       <div className={`${dmsans.variable} font-sans`}>

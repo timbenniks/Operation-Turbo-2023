@@ -63,11 +63,11 @@ export default function PageComposition({
 
         <meta
           property="og:url"
-          content={`https://timbenniks.dev${router.pathname}`}
+          content={`https://timbenniks.dev${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://timbenniks.dev${router.pathname}`}
+          href={`https://timbenniks.dev${router.asPath}`}
         ></link>
 
         <meta

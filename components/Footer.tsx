@@ -15,7 +15,7 @@ type Props = {
 const Footer: React.FC<Props> = ({ nodes }: Props) => {
   const router = useRouter();
 
-  const navItems = nodes.filter((node) => node.path !== "/");
+  const navItems = nodes && nodes.filter((node) => node.path !== "/");
 
   return (
     <footer className="w-full bg-[#091A32]">

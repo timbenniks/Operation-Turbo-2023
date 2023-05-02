@@ -15,8 +15,7 @@ type Props = {
 
 const Header: React.FC<Props> = ({ nodes }: Props) => {
   const router = useRouter();
-
-  const navItems = nodes.filter((node) => node.path !== "/");
+  const navItems = nodes && nodes.filter((node) => node.path !== "/");
   const [open, setOpen] = useState(false);
 
   return (

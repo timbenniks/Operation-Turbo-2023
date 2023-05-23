@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import Logo from "./logo";
 
@@ -98,14 +97,6 @@ const Header: React.FC<Props> = ({ nodes }: Props) => {
         <div className="absolute right-8 top-2 w-[70px] h-[70px]">
           <Logo />
         </div>
-        {/* <Image
-          src="/logo.svg"
-          alt="Tim Benniks"
-          className=""
-          width={100}
-          height={100}
-          loading="eager"
-        /> */}
       </div>
     </header>
   );

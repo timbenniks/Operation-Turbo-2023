@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { createClient } from "contentful";
-import type { Talk } from "../../lib/types"
+//import type { Talk } from "../../lib/types"
 import { toTalk } from "../../lib/helpers"
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -11,8 +11,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     accessToken: process.env.CONTENTFUL_DELIVERY_API_KEY,
   });
 
-  const entries = await client.getEntries<Talk>({
+  const entries = await client.getEntries({
     content_type: "talk",
+    // @ts-ignore
     order: "-fields.date",
     limit: count || 100,
   });

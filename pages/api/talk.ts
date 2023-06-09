@@ -11,7 +11,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     accessToken: process.env.CONTENTFUL_DELIVERY_API_KEY,
   });
 
-  const entry = await client.getEntries<Talk>({
+  const entry = await client.getEntries({
     content_type: "talk",
     "fields.slug[match]": id,
   });

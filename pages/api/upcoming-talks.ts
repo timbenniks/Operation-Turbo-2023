@@ -13,6 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   var gt = new Date().toISOString();
 
+  // @ts-ignore
   const entries = await client.getEntries<Talk>({
     content_type: "talk",
     order: "-fields.date",

@@ -1,23 +1,21 @@
-import { ComponentProps } from "@uniformdev/canvas-react";
+import { ComponentProps, UniformRichText } from "@uniformdev/canvas-react";
 
 type RichTextProps = ComponentProps<{
-  content: {
-    rteValue: string;
-  };
+  text: string;
   component: {
     variant?: string;
   };
 }>;
 
 const RichText: React.FC<RichTextProps> = ({
-  content,
+  text,
   component: { variant },
 }: RichTextProps) => (
   <>
-    {content && (
-      <article
+    {text && (
+      <UniformRichText
         className={`rich-text text-xl mb-4 ${variant ? "p-8" : "p-0"}`}
-        dangerouslySetInnerHTML={{ __html: content?.rteValue }}
+        parameterId="text"
       />
     )}
   </>

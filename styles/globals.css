@@ -91,3 +91,7 @@ header {
   box-decoration-break: clone;
   white-space: initial;
 }
+
+.rich-text p {
+  @apply mb-4;
+}

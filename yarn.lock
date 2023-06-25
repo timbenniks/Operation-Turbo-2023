@@ -1249,34 +1249,34 @@
   dependencies:
     "@uniformdev/canvas" "^18.20.0"
 
-"@uniformdev/canvas-next@^19.24.0":
-  version "19.24.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-next/-/canvas-next-19.24.0.tgz#c6bd50a5af0d691790ce736349ee3f42c9709130"
-  integrity sha512-wx6YBB06crxWjwG9RvyoSwXQDHZf2/p9kTNpuE+sEwPkIqjn7soJZEfPMCPWUCRz3X0lm0/ggJuW4KpBvwJSpQ==
+"@uniformdev/canvas-next@^19.27.0":
+  version "19.27.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-next/-/canvas-next-19.27.0.tgz#7293f22c7e29e37fdba7be213c5f1365abdaace6"
+  integrity sha512-FOmlRpEW3RZQqLQqUi+yzWrp87LTdM34OF3Elf9SXXnrMxm9wuTb9N9zwpq+ktE0FVrIVPrlSZU1gPg+sW4+cA==
   dependencies:
-    "@uniformdev/canvas" "19.24.0"
-    "@uniformdev/canvas-react" "19.24.0"
-    "@uniformdev/project-map" "19.24.0"
-    "@uniformdev/redirect" "19.24.0"
-    "@uniformdev/richtext" "19.24.0"
+    "@uniformdev/canvas" "19.27.0"
+    "@uniformdev/canvas-react" "19.27.0"
+    "@uniformdev/project-map" "19.27.0"
+    "@uniformdev/redirect" "19.27.0"
+    "@uniformdev/richtext" "19.27.0"
     colorette "2.0.20"
 
-"@uniformdev/canvas-react@19.24.0", "@uniformdev/canvas-react@^19.24.0":
-  version "19.24.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-react/-/canvas-react-19.24.0.tgz#9ca797b161d00c3b86cbedbf6e2382fb32f61575"
-  integrity sha512-Y16v5cX8pGna+AMD3HkVXv8Ph1znZTDqhQyycwEiDeM14CfjD/NJD+8I7JKvx5C4nnWiR9l5D8kMMETChW1U5Q==
+"@uniformdev/canvas-react@19.27.0", "@uniformdev/canvas-react@^19.27.0":
+  version "19.27.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-react/-/canvas-react-19.27.0.tgz#72918bd154a3d2c61dc45b207d1417940c6802ba"
+  integrity sha512-lxUG+YquRgvJovBDYvrrz9Nh8hPJQupYjzdj8SVv9ejpIoDHo3RRiillntTE844GJbvLkwFnURcYDOvWBNBYkg==
   dependencies:
-    "@uniformdev/canvas" "19.24.0"
-    "@uniformdev/context" "19.24.0"
-    "@uniformdev/context-react" "19.24.0"
-    "@uniformdev/richtext" "19.24.0"
+    "@uniformdev/canvas" "19.27.0"
+    "@uniformdev/context" "19.27.0"
+    "@uniformdev/context-react" "19.27.0"
+    "@uniformdev/richtext" "19.27.0"
 
-"@uniformdev/canvas@19.24.0", "@uniformdev/canvas@^19.24.0":
-  version "19.24.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas/-/canvas-19.24.0.tgz#474c9dac5dd3a90fe1123ac3c2001ebb3597e4f4"
-  integrity sha512-3oVqHbITvCXM1VQC/eVXbcGHsKbw4RLxJcaKdFELdVt0vCU3nBwZocGlLk3VC129fJJ54CXCfsro6B+rx9fveA==
+"@uniformdev/canvas@19.27.0", "@uniformdev/canvas@^19.27.0":
+  version "19.27.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas/-/canvas-19.27.0.tgz#bb7258a3608b5644fef0398d243e05a97fdf0a08"
+  integrity sha512-eV8x6FHMFarjfWdFXkKgRFsfb/DpH/0Gkx9xU6n14NwD94q6xWJtEPLgGHxn0QrO4Cn2e1Ce3TGIdG7xPjywdQ==
   dependencies:
-    "@uniformdev/context" "19.24.0"
+    "@uniformdev/context" "19.27.0"
     immer "9.0.21"
 
 "@uniformdev/canvas@^18.20.0":
@@ -1286,15 +1286,15 @@
   dependencies:
     "@uniformdev/context" "18.33.0"
 
-"@uniformdev/cli@^19.24.0":
-  version "19.24.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/cli/-/cli-19.24.0.tgz#7ea8f7d93ef4d37509357a676ba31d834dddf868"
-  integrity sha512-P5MVBQucoVvbK0vCekSHXmDySlZjwnxmEAeTcSmdbfBarVADY434MAHYxOmYISHIZtG5Pk64ya/caxWCDd3+iQ==
+"@uniformdev/cli@^19.27.0":
+  version "19.27.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/cli/-/cli-19.27.0.tgz#a3d12fa612093a74766fe74a64d27abb633b6238"
+  integrity sha512-csNPoEv1MKInk8jnECyqI/A0jiVUndZCu3MzKumdFqXUP66N5o6FmfMpscMidxHvVSDShbka7J/ecfkc2ZyZfA==
   dependencies:
-    "@uniformdev/canvas" "19.24.0"
-    "@uniformdev/context" "19.24.0"
-    "@uniformdev/project-map" "19.24.0"
-    "@uniformdev/redirect" "19.24.0"
+    "@uniformdev/canvas" "19.27.0"
+    "@uniformdev/context" "19.27.0"
+    "@uniformdev/project-map" "19.27.0"
+    "@uniformdev/redirect" "19.27.0"
     colorette "2.0.20"
     diff "^5.0.0"
     dotenv "^16.0.3"
@@ -1317,20 +1317,20 @@
     yargs "^17.6.2"
     zod "3.21.4"
 
-"@uniformdev/context-next@^19.24.0":
-  version "19.24.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context-next/-/context-next-19.24.0.tgz#e95ee6474fbf673acc1597a9bb10a3d49898b28b"
-  integrity sha512-etAJx8fV+q4t5ppguZ8/zZbWjHCLIlA1PqdW+K5Dne/bIW98d0YGfTlzeirVUbdQjjhHygkYhF6oMKgQtf5rkg==
+"@uniformdev/context-next@^19.27.0":
+  version "19.27.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/context-next/-/context-next-19.27.0.tgz#9009c0e9c985a305c72e3240962356f50231a2d7"
+  integrity sha512-vozCJUBbfFilkr1okfG+rVqOB8Bl1HG0w7KpGGbAFl5B5MwKGbwvA2AB9ThSBZb0ACNZqshI3C0CBTqaiBe0Aw==
   dependencies:
-    "@uniformdev/context" "19.24.0"
+    "@uniformdev/context" "19.27.0"
     cookie "^0.5.0"
 
-"@uniformdev/context-react@19.24.0", "@uniformdev/context-react@^19.24.0":
-  version "19.24.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context-react/-/context-react-19.24.0.tgz#8598f55db94c28f20b4d9b1587260759e991ee3b"
-  integrity sha512-J5LY4PE7JF+ZJBjxZe3C+KBIrInEtpLgFCefinmkvBcBU0a17db1QPJ5kE4cuG2telNzq+nkYGVhgrVoJxVhFw==
+"@uniformdev/context-react@19.27.0", "@uniformdev/context-react@^19.27.0":
+  version "19.27.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/context-react/-/context-react-19.27.0.tgz#0ac37cfbf6ab1bf1ac82bc7dcd2568a4316a5efc"
+  integrity sha512-GKemS+ZOfP3trp2T2dIkSaUCKXRgRoO0qpEIXE+21LNjIVFkm4uShaP2AQwIJqDtVzeU9w357WVM5TDFYcLLhg==
   dependencies:
-    "@uniformdev/context" "19.24.0"
+    "@uniformdev/context" "19.27.0"
     cookie "0.5.0"
     dequal "2.0.3"
 
@@ -1345,10 +1345,10 @@
     p-limit "^3.1.0"
     rfdc "^1.3.0"
 
-"@uniformdev/context@19.24.0", "@uniformdev/context@^19.24.0":
-  version "19.24.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context/-/context-19.24.0.tgz#f3c25326c4c39ed6c09619d0bbd28c8abb4d8040"
-  integrity sha512-kXyVmusvXVH4nqXZuP+tHan7dWU0ApNndgXTBEoIMCWncVrEuBw5GTyVY7tMtgSzw/qqoC9FOve62CkFoxp0ow==
+"@uniformdev/context@19.27.0", "@uniformdev/context@^19.27.0":
+  version "19.27.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/context/-/context-19.27.0.tgz#72901ff84890d9084f8d07695e2b06d3a2eb71b6"
+  integrity sha512-9fIGWPavLW+7jdaerRd6h82LIHxZs+Hq64ANiSDBLMn/uRTwlYMKP4ca2dopNha6jOSmNa4FVR8tQYCRKvhbbQ==
   dependencies:
     dequal "^2.0.2"
     js-cookie "3.0.5"
@@ -1356,27 +1356,27 @@
     p-limit "^3.1.0"
     rfdc "^1.3.0"
 
-"@uniformdev/project-map@19.24.0", "@uniformdev/project-map@^19.24.0":
-  version "19.24.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/project-map/-/project-map-19.24.0.tgz#9f9a5a0de01e272c716103214eee96c2c5ed08ce"
-  integrity sha512-/nmYKtSO6uwunNVfdlfC2slLIeRgq4sNsw+NFswTYI2bZqjJYAddXXdaALrZLxRB0ywErjp0mcfqG81Xfw9/Xw==
+"@uniformdev/project-map@19.27.0", "@uniformdev/project-map@^19.27.0":
+  version "19.27.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/project-map/-/project-map-19.27.0.tgz#296d9718f0e62d66799f6990e11bc0942f8deb58"
+  integrity sha512-ngBSJCnxUSjHlAmxuxqtWV/TKLHsOekyQS4UHzMRUanl7yfn+4MmTPWMyRfQod6aN/YZ8AnDhTcaH07pgjHMmQ==
   dependencies:
-    "@uniformdev/canvas" "19.24.0"
-    "@uniformdev/context" "19.24.0"
+    "@uniformdev/canvas" "19.27.0"
+    "@uniformdev/context" "19.27.0"
 
-"@uniformdev/redirect@19.24.0":
-  version "19.24.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/redirect/-/redirect-19.24.0.tgz#5d89a177079aadbdca3e1f4f95ff78d5161b32dd"
-  integrity sha512-BPBpl8x5U76ShY4BQc7d2izbRAzvrrObLOk3HHQDaYpinp+f0xI7BV+KrOXQ/Evu13/0KeaOptN2j3nj5zYsJw==
+"@uniformdev/redirect@19.27.0":
+  version "19.27.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/redirect/-/redirect-19.27.0.tgz#31957934d8c0c1b480464bae19254db1fb61c0e8"
+  integrity sha512-jab+8jNes0g8zYYp6XjrxQ9AbkwRkAGBBW9EToh8gMkIHNRklwNxbdIm7pydvIWJoFzSMHUOPCrEKy8g95RC2w==
   dependencies:
-    "@uniformdev/context" "19.24.0"
+    "@uniformdev/context" "19.27.0"
     p-limit "^3.1.0"
     rfdc "^1.3.0"
 
-"@uniformdev/richtext@19.24.0":
-  version "19.24.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/richtext/-/richtext-19.24.0.tgz#6da9b836924e9e610d3605dfad4db2b31327159c"
-  integrity sha512-+In8yTm9dZs5wqU3+pNqA/yL4YW6gZFILU1aCpGsjsX37ciV5F4O52OAUjm1v62ILjNLS5MSUG+RUOKBr76R/g==
+"@uniformdev/richtext@19.27.0":
+  version "19.27.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/richtext/-/richtext-19.27.0.tgz#b0b33374d5fa9373186d70d70c6c9540eaa38a52"
+  integrity sha512-LrKFGXUhZOkjrXsfiN3VtQuMqJ8oztUfgYTuB69g8bk33KedHCQNn27hw7DO/zyr+0pFflQ6Wp+ujM4DjhXezQ==
 
 "@vercel/analytics@^1.0.1":
   version "1.0.1"

@@ -618,92 +618,92 @@
     },
 
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1678210744",
+      "source": "/_nuxt/static/1678210744",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1665081058",
+      "source": "/_nuxt/static/1665081058",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/",
+      "source": "/_nuxt/",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1662465350",
+      "source": "/_nuxt/static/1662465350",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1667231740",
+      "source": "/_nuxt/static/1667231740",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1655453395",
+      "source": "/_nuxt/static/1655453395",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1674839664",
+      "source": "/_nuxt/static/1674839664",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1655061346",
+      "source": "/_nuxt/static/1655061346",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1669223011",
+      "source": "/_nuxt/static/1669223011",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1666809801",
+      "source": "/_nuxt/static/1666809801",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/videos/vuejs-amsterdam-vlog-day-2",
+      "source": "/videos/vuejs-amsterdam-vlog-day-2",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1663743028",
+      "source": "/_nuxt/static/1663743028",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1646910251",
+      "source": "/_nuxt/static/1646910251",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1665693300",
+      "source": "/_nuxt/static/1665693300",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1662923571",
+      "source": "/_nuxt/static/1662923571",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/_nuxt/static/1665428689",
+      "source": "/_nuxt/static/1665428689",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/marathoner.html?fb_comment_id=1042668989081186_1043029435711808",
+      "source": "/marathoner.html?fb_comment_id=1042668989081186_1043029435711808",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "https://timbenniks.dev/blog/712/step-by-step-guide-to-install-zotonic-on-osx",
+      "source": "/blog/712/step-by-step-guide-to-install-zotonic-on-osx",
       "destination": "/",
       "permanent": true
     }

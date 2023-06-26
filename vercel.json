@@ -701,6 +701,11 @@
       "source": "/blog/712/step-by-step-guide-to-install-zotonic-on-osx",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "tags/vanilla",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }

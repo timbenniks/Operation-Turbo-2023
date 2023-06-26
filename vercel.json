@@ -698,17 +698,12 @@
       "permanent": true
     },
     {
-      "source": "/marathoner.html?fb_comment_id=1042668989081186_1043029435711808",
+      "source": "/marathoner.html(?!fb_comment_id=1042668989081186_1043029435711808)",
       "destination": "/",
       "permanent": true
     },
     {
       "source": "/blog/712/step-by-step-guide-to-install-zotonic-on-osx",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/712/step-by-step-guide-to-install-zotonic-on-osx1",
       "destination": "/",
       "permanent": true
     }

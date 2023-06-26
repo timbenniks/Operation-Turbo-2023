@@ -698,7 +698,7 @@
       "permanent": true
     },
     {
-      "source": "/marathoner.html(?!fb_comment_id=1042668989081186_1043029435711808)",
+      "source": "/marathoner.html(?fb_comment_id=1042668989081186_1043029435711808)",
       "destination": "/",
       "permanent": true
     },

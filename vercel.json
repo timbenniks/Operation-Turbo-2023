@@ -703,7 +703,13 @@
       "permanent": true
     },
     {
-      "source": "tags/vanilla",
+      "source": "/tags/vanilla",
+      "destination": "/",
+      "permanent": true
+    },
+
+    {
+      "source": "/garmin-vs-nike.html",
       "destination": "/",
       "permanent": true
     }

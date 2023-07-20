@@ -31,12 +31,22 @@ export async function getNavigationItems() {
     projectMapId
   });
 
-  return nodes.map(node => {
+  const mappedNodes = nodes.map(node => {
     return {
       name: node.name,
       path: node.path
     }
   })
+
+  const filteredNodes = mappedNodes.filter(n => {
+    if (n.path !== '/uniform-videos') {
+      return true
+    }
+  })
+
+  console.log(filteredNodes)
+
+  return filteredNodes
 }
 
 export async function getCompositionBySlug(slug: string, preview: boolean) {

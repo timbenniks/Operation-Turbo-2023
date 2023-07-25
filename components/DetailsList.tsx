@@ -7,7 +7,7 @@ type DetailsListProps = ComponentProps<{
 const DetailsList: React.FC<DetailsListProps> = ({
   label,
 }: DetailsListProps) => (
-  <ul className="grid grid-cols-1 md:grid-cols-3 gap-12">
+  <ul className="grid grid-cols-1 md:grid-cols-3 gap-12 p-8 xl:px-0">
     <UniformSlot name="details" />
   </ul>
 );

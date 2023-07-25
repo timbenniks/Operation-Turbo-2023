@@ -1,10 +1,5 @@
 {
   "redirects": [
-    {
-      "source": "/presskit",
-      "destination": "https://presskit.timbenniks.dev",
-      "permanent": true
-    },
     { "source": "/playlists", "destination": "/", "permanent": true },
     { "source": "/contact", "destination": "/", "permanent": true },
     { "source": "/contact/", "destination": "/", "permanent": true },

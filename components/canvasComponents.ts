@@ -9,6 +9,8 @@ import List from "./List"
 import Card from "./Card"
 import Container from "./Container"
 import StandAloneImage from "./StandAloneImage"
+import DetailsList from "./DetailsList"
+import Detail from "./Detail"
 
 registerUniformComponent({ type: "hero", component: Hero });
 registerUniformComponent({ type: "twoColumn", component: TwoColumn });
@@ -32,3 +34,6 @@ registerUniformComponent({ type: "title", variantId: "large", component: Title }
 
 registerUniformComponent({ type: "richText", component: RichText });
 registerUniformComponent({ type: "richText", variantId: "addedSpace", component: RichText });
+
+registerUniformComponent({ type: "detailsList", component: DetailsList });
+registerUniformComponent({ type: "detail", component: Detail });

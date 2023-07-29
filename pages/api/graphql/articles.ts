@@ -48,11 +48,13 @@ export default async (req, res) => {
 
   const { query, variables, operationName } = method === "GET" ? qs : body;
 
-  res.status(400).json({
-    statusCode: 400,
-    error: "Bad Request",
-    message: "Username missing from variables",
-  });
+  if (!variables.username) {
+    res.status(400).json({
+      statusCode: 400,
+      error: "Bad Request",
+      message: "Username missing from variables",
+    });
+  }
 
   const data = await fetch(`https://dev.to/api/articles?username=${variables.username}`)
   const result = await data.json()
